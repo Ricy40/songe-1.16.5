@@ -93,8 +93,7 @@ public class BlockInit {
 							.harvestTool(ToolType.HOE)
 							.harvestLevel(1)
 							.requiresCorrectToolForDrops()
-							.sound(SoundType.GRASS)
-							.noCollission()));
+							.sound(SoundType.GRASS)));
 
 	//Register Method
 
