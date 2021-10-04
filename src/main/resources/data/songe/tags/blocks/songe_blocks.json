@@ -1,6 +1,13 @@
 {
   "replace" : false,
   "values" : [
-    "songe:songe_block"
+    "songe:songe_block",
+    "songe:songe_slab",
+    "songe:songe_vertical_slab",
+    "songe:songe_fence",
+    "songe:songe_fence_gate",
+    "songe:songe_stairs",
+    "songe:songe_button",
+    "songe:songe_pressure_plate"
   ]
 }

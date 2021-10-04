@@ -6,6 +6,8 @@
 	"block.songe.songe_fence" : "Songe Fence Gate",
 	"block.songe.songe_fence_gate" : "Songe Fence Gate",
 	"block.songe.songe_slab" : "Songe Slab",
+	"block.songe.songe_button" : "Songe Button",
+	"block.songe.songe_pressure_plate" : "Songe Pressure Plate",
 	"block.songe.songe_vertical_slab" : "Songe Vertical Slab",
 	"tooltip.songe.hold_shift" : "Hold \u00A7eShift \u00A77for More Information",
 	"itemGroup.songetab" : "Songe"

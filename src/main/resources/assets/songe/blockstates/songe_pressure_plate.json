@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "songe:songe_pressure_plate"
+    },
+    "powered=true": {
+      "model": "songe:songe_powered_plate_down"
+    }
+  }
+}
