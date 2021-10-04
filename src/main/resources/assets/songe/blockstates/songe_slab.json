@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "songe:block/songe_slab"
+    },
+    "type=double": {
+      "model": "songe:block/songe_block"
+    },
+    "type=top": {
+      "model": "songe:block/songe_slab_top"
+    }
+  }
+}

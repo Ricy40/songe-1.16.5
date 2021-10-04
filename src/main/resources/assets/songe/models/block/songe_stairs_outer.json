@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "songe:block/songe_block",
+    "top": "songe:block/songe_block",
+    "side": "songe:block/songe_block"
+  }
+}

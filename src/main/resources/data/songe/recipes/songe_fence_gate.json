@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "$#$",
+    "$#$"
+  ],
+  "key": {
+    "#": {
+      "item": "songe:songe"
+    },
+    "$": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "songe:songe_fence_gate"
+  }
+}

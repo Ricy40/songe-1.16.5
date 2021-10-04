@@ -1,0 +1,29 @@
+modLoader="javafml" 
+loaderVersion="[36,)" 
+license="All rights reserved"
+
+[[mods]] 
+modId="songe"
+version="1.0" 
+displayName="Songe Mod"
+# mod page displayURL="http://example.com/"
+logoFile="songe.png"
+credits="- Ricy40" 
+authors="Ricy40"
+description='''
+Ricy's test mod for testing random crap.
+'''
+
+[[dependencies.songe]]
+    modId="forge" 
+    mandatory=true 
+    versionRange="[36,)" 
+    ordering="NONE"
+    side="BOTH"
+    
+[[dependencies.songe]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.16.5,1.17)"
+    ordering="NONE"
+    side="BOTH"
