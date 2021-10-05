@@ -43,7 +43,7 @@ public enum ModArmorMaterial implements IArmorMaterial {
 
     @Override
     public int getDurabilityForSlot(EquipmentSlotType slotIn) {
-        return 0;
+        return HEALTH_PER_SLOT[slotIn.getIndex()] * this.durabilityMultiplier;
     }
 
     @Override
