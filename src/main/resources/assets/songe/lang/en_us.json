@@ -1,6 +1,12 @@
 {
 	"item.songe.songe" : "Songe",
 	"item.songe.special_songe" : "Special Songe",
+	"item.songe.songe_sword" : "Songe Sword",
+	"item.songe.songe_pickaxe" : "Songe Pickaxe",
+	"item.songe.songe_axe" : "Songe Axe",
+	"item.songe.songe_hoe" : "Songe Hoe",
+	"item.songe.songe_shovel" : "Songe Shovel",
+
 	"block.songe.songe_block" : "Block of Songe",
 	"block.songe.songe_stairs" : "Songe Stairs",
 	"block.songe.songe_fence" : "Songe Fence Gate",

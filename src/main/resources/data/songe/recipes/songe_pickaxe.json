@@ -1,17 +1,19 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "  #",
-    " ##",
-    "###"
+    "###",
+    " $ ",
+    " $ "
   ],
   "key": {
     "#": {
       "item": "songe:songe"
+    },
+    "$": {
+      "item": "minecraft:stick"
     }
   },
   "result": {
-    "item": "songe:songe_stairs",
-    "count": "4"
+    "item": "songe:songe_pickaxe"
   }
 }
