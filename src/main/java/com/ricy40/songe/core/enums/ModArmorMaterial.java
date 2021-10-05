@@ -3,15 +3,16 @@ package com.ricy40.songe.core.enums;
 import com.ricy40.songe.core.init.ItemInit;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.IArmorMaterial;
-import net.minecraft.item.IItemTier;
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.util.LazyValue;
 import net.minecraft.util.SoundEvent;
 import net.minecraft.util.SoundEvents;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.api.distmarker.OnlyIn;
 
 import java.util.function.Supplier;
 
-public enum ModArmorMaterial implements IArmorMaterial, IItemTier {
+public enum ModArmorMaterial implements IArmorMaterial {
 
     SONGE("songe", 13, new int[]{2, 5, 5, 2}, 12, SoundEvents.GRASS_PLACE, 0.0F, 0.0F, () -> {
         return Ingredient.of(ItemInit.SONGE.get());
@@ -51,26 +52,6 @@ public enum ModArmorMaterial implements IArmorMaterial, IItemTier {
     }
 
     @Override
-    public int getUses() {
-        return 0;
-    }
-
-    @Override
-    public float getSpeed() {
-        return 0;
-    }
-
-    @Override
-    public float getAttackDamageBonus() {
-        return 0;
-    }
-
-    @Override
-    public int getLevel() {
-        return 0;
-    }
-
-    @Override
     public int getEnchantmentValue() {
         return 0;
     }
@@ -85,10 +66,12 @@ public enum ModArmorMaterial implements IArmorMaterial, IItemTier {
         return null;
     }
 
+    @OnlyIn(Dist.CLIENT)
     @Override
     public String getName() {
-        return null;
+        return this.name;
     }
+
 
     @Override
     public float getToughness() {
@@ -99,4 +82,5 @@ public enum ModArmorMaterial implements IArmorMaterial, IItemTier {
     public float getKnockbackResistance() {
         return 0;
     }
+
 }
