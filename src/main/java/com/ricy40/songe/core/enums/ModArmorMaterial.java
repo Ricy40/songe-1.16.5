@@ -1,5 +1,6 @@
 package com.ricy40.songe.core.enums;
 
+import com.ricy40.songe.Songe;
 import com.ricy40.songe.core.init.ItemInit;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.IArmorMaterial;
@@ -46,41 +47,34 @@ public enum ModArmorMaterial implements IArmorMaterial {
         return HEALTH_PER_SLOT[slotIn.getIndex()] * this.durabilityMultiplier;
     }
 
-    @Override
     public int getDefenseForSlot(EquipmentSlotType slotIn) {
-        return 0;
+        return this.slotProtections[slotIn.getIndex()];
     }
 
-    @Override
     public int getEnchantmentValue() {
-        return 0;
+        return this.enchantmentValue;
     }
 
-    @Override
     public SoundEvent getEquipSound() {
-        return null;
+        return this.sound;
     }
 
-    @Override
     public Ingredient getRepairIngredient() {
-        return null;
+        return this.repairIngredient.get();
     }
 
     @OnlyIn(Dist.CLIENT)
     @Override
     public String getName() {
-        return this.name;
+        return Songe.MOD_ID + ":" + this.name;
     }
 
-
-    @Override
     public float getToughness() {
-        return 0;
+        return this.toughness;
     }
 
-    @Override
     public float getKnockbackResistance() {
-        return 0;
+        return this.knockbackResistance;
     }
 
 }
