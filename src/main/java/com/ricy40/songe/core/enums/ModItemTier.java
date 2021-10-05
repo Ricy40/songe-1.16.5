@@ -15,8 +15,6 @@ public enum ModItemTier implements IItemTier {
 
     ;
 
-
-
     private final int level;
     private final int uses;
     private final float speed;

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "# #",
+    "# #"
+  ],
+  "key": {
+    "#": {
+      "item": "songe:songe"
+    }
+  },
+  "result": {
+    "item": "songe:songe_boots"
+  }
+}
