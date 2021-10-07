@@ -1,0 +1,57 @@
+{
+  "block.copper.break": {
+    "subtitle": "songe.subtitle.block.copper.break",
+    "sounds": [
+      "Copper_break1",
+      "Copper_break2",
+      "Copper_break3",
+      "Copper_break4"
+    ]
+  },
+
+  "block.copper.fall": {
+    "subtitle": "songe.subtitle.block.copper.fall",
+    "sounds": [
+      "Copper_step1",
+      "Copper_step2",
+      "Copper_step3",
+      "Copper_step4",
+      "Copper_step5",
+      "Copper_step5"
+    ]
+  },
+
+  "block.copper.hit": {
+    "subtitle": "songe.subtitle.block.copper.hit",
+    "sounds": [
+      "Copper_step1",
+      "Copper_step2",
+      "Copper_step3",
+      "Copper_step4",
+      "Copper_step5",
+      "Copper_step5"
+    ]
+  },
+
+  "block.copper.place": {
+    "subtitle": "songe.subtitle.block.copper.place",
+    "sounds": [
+      "Copper_break1",
+      "Copper_break2",
+      "Copper_break3",
+      "Copper_break4"
+    ]
+  },
+
+  "block.copper.step": {
+    "subtitle": "songe.subtitle.block.copper.step",
+    "sounds": [
+      "Copper_step1",
+      "Copper_step2",
+      "Copper_step3",
+      "Copper_step4",
+      "Copper_step5",
+      "Copper_step5"
+    ]
+  }
+}

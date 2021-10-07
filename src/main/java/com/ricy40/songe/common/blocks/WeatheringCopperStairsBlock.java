@@ -1,24 +1,22 @@
 package com.ricy40.songe.common.blocks;
 
-import java.util.Random;
-
 import com.ricy40.songe.core.interfaces.WeatheringCopper;
 import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
+import net.minecraft.block.StairsBlock;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.World;
 import net.minecraft.world.server.ServerWorld;
 
-public class WeatheringCopperFullBlock extends Block implements WeatheringCopper {
+import java.util.Random;
+
+public class WeatheringCopperStairsBlock extends StairsBlock implements WeatheringCopper {
     private final WeatheringCopper.WeatherState weatherState;
 
-    public WeatheringCopperFullBlock(WeatheringCopper.WeatherState wthrState, AbstractBlock.Properties prop) {
-        super(prop);
+    public WeatheringCopperStairsBlock(WeatheringCopper.WeatherState wthrState, BlockState state, AbstractBlock.Properties prop) {
+        super(state, prop);
         this.weatherState = wthrState;
     }
 
-    @Override
     public void randomTick(BlockState state, ServerWorld worldIn, BlockPos pos, Random rand) {
         this.onRandomTick(state, worldIn, pos, rand);
     }
