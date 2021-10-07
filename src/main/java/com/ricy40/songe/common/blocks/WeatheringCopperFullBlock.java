@@ -8,6 +8,7 @@ import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
+import net.minecraft.world.server.ServerWorld;
 
 public class WeatheringCopperFullBlock extends Block implements WeatheringCopper {
     private final WeatheringCopper.WeatherState weatherState;
@@ -18,7 +19,7 @@ public class WeatheringCopperFullBlock extends Block implements WeatheringCopper
     }
 
     @Override
-    public void onRandomTick(BlockState state, World worldIn, BlockPos pos, Random rand) {
+    public void randomTick(BlockState state, ServerWorld worldIn, BlockPos pos, Random rand) {
         this.onRandomTick(state, worldIn, pos, rand);
     }
 
