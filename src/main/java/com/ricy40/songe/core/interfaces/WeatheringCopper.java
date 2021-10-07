@@ -1,6 +1,5 @@
 package com.ricy40.songe.core.interfaces;
 
-
 import com.google.common.base.Suppliers;
 import com.google.common.collect.BiMap;
 import com.google.common.collect.ImmutableBiMap;

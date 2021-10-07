@@ -19,7 +19,13 @@
 	"block.songe.songe_button" : "Songe Button",
 	"block.songe.songe_pressure_plate" : "Songe Pressure Plate",
 	"block.songe.songe_vertical_slab" : "Songe Vertical Slab",
+	"block.songe.copper_block" : "Block of Copper",
+	"block.songe.exposed_copper" : "Exposed Copper Block",
+	"block.songe.weathered_copper" : "Weathered Copper Block",
+	"block.songe.oxidized_copper" : "Oxidized Copper Block",
+
 	"tooltip.songe.hold_shift" : "Hold \u00A7eShift \u00A77for More Information",
+
 	"itemGroup.songetab" : "Songe"
 
 }

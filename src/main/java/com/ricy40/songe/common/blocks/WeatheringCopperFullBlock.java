@@ -17,7 +17,8 @@ public class WeatheringCopperFullBlock extends Block implements WeatheringCopper
         this.weatherState = wthrState;
     }
 
-    public void randomTick(BlockState state, World worldIn, BlockPos pos, Random rand) {
+    @Override
+    public void onRandomTick(BlockState state, World worldIn, BlockPos pos, Random rand) {
         this.onRandomTick(state, worldIn, pos, rand);
     }
 
