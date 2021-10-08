@@ -16,7 +16,11 @@ public interface WeatheringCopper extends ChangeOverTimeBlock<WeatheringCopper.W
         return ImmutableBiMap.<Block, Block>builder()
                 .put(BlockInit.COPPER_BLOCK.get(), BlockInit.EXPOSED_COPPER.get())
                 .put(BlockInit.EXPOSED_COPPER.get(), BlockInit.WEATHERED_COPPER.get())
-                .put(BlockInit.WEATHERED_COPPER.get(), BlockInit.OXIDIZED_COPPER.get()).build();
+                .put(BlockInit.WEATHERED_COPPER.get(), BlockInit.OXIDIZED_COPPER.get())
+                .put(BlockInit.COPPER_SLAB.get(), BlockInit.EXPOSED_COPPER_SLAB.get())
+                .put(BlockInit.EXPOSED_COPPER_SLAB.get(), BlockInit.WEATHERED_COPPER_SLAB.get())
+                .put(BlockInit.WEATHERED_COPPER_SLAB.get(), BlockInit.OXIDIZED_COPPER_SLAB.get())
+                .build();
     });
     Supplier<BiMap<Block, Block>> PREVIOUS_BY_BLOCK = Suppliers.memoize(() -> {
         return NEXT_BY_BLOCK.get().inverse();
