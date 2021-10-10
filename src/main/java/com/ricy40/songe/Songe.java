@@ -1,5 +1,6 @@
 package com.ricy40.songe;
 
+import com.ricy40.songe.core.init.SoundInit;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.NonNullList;
@@ -23,7 +24,8 @@ public class Songe {
     public Songe() {
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
     	bus.addListener(this::setup);
-        
+
+        SoundInit.SOUNDS.register(bus);
         ItemInit.ITEMS.register(bus);
         BlockInit.BLOCKS.register(bus);
 

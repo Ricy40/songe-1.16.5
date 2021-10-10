@@ -4,7 +4,7 @@
       "model": "songe:block/exposed_copper_slab"
     },
     "type=double": {
-      "model": "songe:block/exposed_copper_block"
+      "model": "songe:block/exposed_copper"
     },
     "type=top": {
       "model": "songe:block/exposed_copper_slab_top"

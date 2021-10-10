@@ -4,7 +4,7 @@
       "model": "songe:block/weathered_copper_slab"
     },
     "type=double": {
-      "model": "songe:block/weathered_copper_block"
+      "model": "songe:block/weathered_copper"
     },
     "type=top": {
       "model": "songe:block/weathered_copper_slab_top"
