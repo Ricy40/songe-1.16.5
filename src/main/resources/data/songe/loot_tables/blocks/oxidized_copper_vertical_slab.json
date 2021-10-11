@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "songe:copper_stairs"
+          "name": "songe:oxidized_copper_vertical_slab"
         }
       ],
       "conditions": [

@@ -20,6 +20,13 @@ public interface WeatheringCopper extends ChangeOverTimeBlock<WeatheringCopper.W
                 .put(BlockInit.COPPER_SLAB.get(), BlockInit.EXPOSED_COPPER_SLAB.get())
                 .put(BlockInit.EXPOSED_COPPER_SLAB.get(), BlockInit.WEATHERED_COPPER_SLAB.get())
                 .put(BlockInit.WEATHERED_COPPER_SLAB.get(), BlockInit.OXIDIZED_COPPER_SLAB.get())
+                .put(BlockInit.COPPER_STAIRS.get(), BlockInit.EXPOSED_COPPER_STAIRS.get())
+                .put(BlockInit.EXPOSED_COPPER_STAIRS.get(), BlockInit.WEATHERED_COPPER_STAIRS.get())
+                .put(BlockInit.WEATHERED_COPPER_STAIRS.get(), BlockInit.OXIDIZED_COPPER_STAIRS.get())
+                .put(BlockInit.COPPER_VERTICAL_SLAB.get(), BlockInit.EXPOSED_COPPER_VERTICAL_SLAB.get())
+                .put(BlockInit.EXPOSED_COPPER_VERTICAL_SLAB.get(), BlockInit.WEATHERED_COPPER_VERTICAL_SLAB.get())
+                .put(BlockInit.WEATHERED_COPPER_VERTICAL_SLAB.get(), BlockInit.OXIDIZED_COPPER_VERTICAL_SLAB.get())
+                
                 .build();
     });
     Supplier<BiMap<Block, Block>> PREVIOUS_BY_BLOCK = Suppliers.memoize(() -> {

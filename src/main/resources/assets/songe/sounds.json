@@ -2,56 +2,56 @@
   "block.copper.break": {
     "subtitle": "songe.subtitle.block.copper.break",
     "sounds": [
-      "songe:Copper/Copper_break1",
-      "songe:Copper/Copper_break2",
-      "songe:Copper/Copper_break3",
-      "songe:Copper/Copper_break4"
+      "songe:copper/copper_break1",
+      "songe:copper/copper_break2",
+      "songe:copper/copper_break3",
+      "songe:copper/copper_break4"
     ]
   },
 
   "block.copper.fall": {
     "subtitle": "songe.subtitle.block.copper.fall",
     "sounds": [
-      "songe:Copper/Copper_step1",
-      "songe:Copper/Copper_step2",
-      "songe:Copper/Copper_step3",
-      "songe:Copper/Copper_step4",
-      "songe:Copper/Copper_step5",
-      "songe:Copper/Copper_step5"
+      "songe:copper/copper_step1",
+      "songe:copper/copper_step2",
+      "songe:copper/copper_step3",
+      "songe:copper/copper_step4",
+      "songe:copper/copper_step5",
+      "songe:copper/copper_step5"
     ]
   },
 
   "block.copper.hit": {
     "subtitle": "songe.subtitle.block.copper.hit",
     "sounds": [
-      "songe:Copper/Copper_step1",
-      "songe:Copper/Copper_step2",
-      "songe:Copper/Copper_step3",
-      "songe:Copper/Copper_step4",
-      "songe:Copper/Copper_step5",
-      "songe:Copper/Copper_step5"
+      "songe:copper/copper_step1",
+      "songe:copper/copper_step2",
+      "songe:copper/copper_step3",
+      "songe:copper/copper_step4",
+      "songe:copper/copper_step5",
+      "songe:copper/copper_step5"
     ]
   },
 
   "block.copper.place": {
     "subtitle": "songe.subtitle.block.copper.place",
     "sounds": [
-      "songe:Copper/Copper_break1",
-      "songe:Copper/Copper_break2",
-      "songe:Copper/Copper_break3",
-      "songe:Copper/Copper_break4"
+      "songe:copper/copper_break1",
+      "songe:copper/copper_break2",
+      "songe:copper/copper_break3",
+      "songe:copper/copper_break4"
     ]
   },
 
   "block.copper.step": {
     "subtitle": "songe.subtitle.block.copper.step",
     "sounds": [
-      "songe:Copper/Copper_step1",
-      "songe:Copper/Copper_step2",
-      "songe:Copper/Copper_step3",
-      "songe:Copper/Copper_step4",
-      "songe:Copper/Copper_step5",
-      "songe:Copper/Copper_step5"
+      "songe:copper/copper_step1",
+      "songe:copper/copper_step2",
+      "songe:copper/copper_step3",
+      "songe:copper/copper_step4",
+      "songe:copper/copper_step5",
+      "songe:copper/copper_step5"
     ]
   }
 }

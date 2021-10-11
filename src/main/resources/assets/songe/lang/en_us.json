@@ -28,6 +28,14 @@
 	"block.songe.exposed_copper_slab" : "Exposed Copper Slab",
 	"block.songe.weathered_copper_slab" : "Weathered Copper Slab",
 	"block.songe.oxidized_copper_slab" : "Oxidized Copper Slab",
+	"block.songe.copper_stairs" : "Copper Stairs",
+	"block.songe.exposed_copper_stairs" : "Exposed Copper Stairs",
+	"block.songe.weathered_copper_stairs" : "Weathered Copper Stairs",
+	"block.songe.oxidized_copper_stairs" : "Oxidized Copper Stairs",
+	"block.songe.copper_vertical_slab" : "Copper Vertical Slab",
+	"block.songe.exposed_copper_vertical_slab" : "Exposed Copper Vertical Slab",
+	"block.songe.weathered_copper_vertical_slab" : "Weathered Copper Vertical Slab",
+	"block.songe.oxidized_copper_vertical_slab" : "Oxidized Copper Vertical Slab",
 
 	"tooltip.songe.hold_shift" : "Hold \u00A7eShift \u00A77for More Information",
 

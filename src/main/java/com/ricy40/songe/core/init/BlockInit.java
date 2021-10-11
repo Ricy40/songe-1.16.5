@@ -38,34 +38,18 @@ public class BlockInit {
 	public static final RegistryObject<Block> EXPOSED_COPPER = registerBlock("exposed_copper", () -> new WeatheringCopperFullBlock(WeatheringCopper.WeatherState.EXPOSED, AbstractBlock.Properties.of(Material.METAL, MaterialColor.TERRACOTTA_LIGHT_GRAY).requiresCorrectToolForDrops().strength(3.0F, 6.0F).sound(SoundInit.COPPER)));
 	public static final RegistryObject<Block> WEATHERED_COPPER = registerBlock("weathered_copper", () -> new WeatheringCopperFullBlock(WeatheringCopper.WeatherState.WEATHERED, AbstractBlock.Properties.of(Material.METAL, MaterialColor.WARPED_STEM).requiresCorrectToolForDrops().strength(3.0F, 6.0F).sound(SoundInit.COPPER)));
 	public static final RegistryObject<Block> OXIDIZED_COPPER = registerBlock("oxidized_copper", () -> new WeatheringCopperFullBlock(WeatheringCopper.WeatherState.OXIDIZED, AbstractBlock.Properties.of(Material.METAL, MaterialColor.WARPED_NYLIUM).requiresCorrectToolForDrops().strength(3.0F, 6.0F).sound(SoundInit.COPPER)));
-
-	public static final RegistryObject<Block> COPPER_SLAB = registerBlock("copper_slab",
-			() -> new WeatheringCopperSlabBlock(WeatheringCopper.WeatherState.UNAFFECTED,
-					AbstractBlock.Properties.of(Material.METAL, MaterialColor.COLOR_ORANGE)
-							.requiresCorrectToolForDrops()
-							.strength(3.0F, 6.0F)
-							.sound(SoundInit.COPPER)));
-
-	public static final RegistryObject<Block> EXPOSED_COPPER_SLAB = registerBlock("exposed_copper_slab",
-			() -> new WeatheringCopperSlabBlock(WeatheringCopper.WeatherState.EXPOSED,
-					AbstractBlock.Properties.of(Material.METAL, MaterialColor.TERRACOTTA_LIGHT_GRAY)
-							.requiresCorrectToolForDrops()
-							.strength(3.0F, 6.0F)
-							.sound(SoundInit.COPPER)));
-
-	public static final RegistryObject<Block> WEATHERED_COPPER_SLAB = registerBlock("weathered_copper_slab",
-			() -> new WeatheringCopperSlabBlock(WeatheringCopper.WeatherState.WEATHERED,
-					AbstractBlock.Properties.of(Material.METAL, MaterialColor.WARPED_STEM)
-							.requiresCorrectToolForDrops()
-							.strength(3.0F, 6.0F)
-							.sound(SoundInit.COPPER)));
-
-	public static final RegistryObject<Block> OXIDIZED_COPPER_SLAB = registerBlock("oxidized_copper_slab",
-			() -> new WeatheringCopperSlabBlock(WeatheringCopper.WeatherState.OXIDIZED,
-					AbstractBlock.Properties.of(Material.METAL, MaterialColor.WARPED_NYLIUM)
-							.requiresCorrectToolForDrops()
-							.strength(3.0F, 6.0F)
-							.sound(SoundInit.COPPER)));
+	public static final RegistryObject<Block> COPPER_SLAB = registerBlock("copper_slab", () -> new WeatheringCopperSlabBlock(WeatheringCopper.WeatherState.UNAFFECTED, AbstractBlock.Properties.of(Material.METAL, MaterialColor.COLOR_ORANGE).requiresCorrectToolForDrops().strength(3.0F, 6.0F).sound(SoundInit.COPPER)));
+	public static final RegistryObject<Block> EXPOSED_COPPER_SLAB = registerBlock("exposed_copper_slab", () -> new WeatheringCopperSlabBlock(WeatheringCopper.WeatherState.EXPOSED, AbstractBlock.Properties.of(Material.METAL, MaterialColor.TERRACOTTA_LIGHT_GRAY).requiresCorrectToolForDrops().strength(3.0F, 6.0F).sound(SoundInit.COPPER)));
+	public static final RegistryObject<Block> WEATHERED_COPPER_SLAB = registerBlock("weathered_copper_slab", () -> new WeatheringCopperSlabBlock(WeatheringCopper.WeatherState.WEATHERED, AbstractBlock.Properties.of(Material.METAL, MaterialColor.WARPED_STEM).requiresCorrectToolForDrops().strength(3.0F, 6.0F).sound(SoundInit.COPPER)));
+	public static final RegistryObject<Block> OXIDIZED_COPPER_SLAB = registerBlock("oxidized_copper_slab", () -> new WeatheringCopperSlabBlock(WeatheringCopper.WeatherState.OXIDIZED, AbstractBlock.Properties.of(Material.METAL, MaterialColor.WARPED_NYLIUM).requiresCorrectToolForDrops().strength(3.0F, 6.0F).sound(SoundInit.COPPER)));
+	public static final RegistryObject<Block> COPPER_STAIRS = registerBlock("copper_stairs", () -> new WeatheringCopperStairsBlock(WeatheringCopper.WeatherState.UNAFFECTED, COPPER_BLOCK.get().defaultBlockState(), AbstractBlock.Properties.of(Material.METAL, MaterialColor.COLOR_ORANGE).requiresCorrectToolForDrops().strength(3.0F, 6.0F).sound(SoundInit.COPPER)));
+	public static final RegistryObject<Block> EXPOSED_COPPER_STAIRS = registerBlock("exposed_copper_stairs", () -> new WeatheringCopperStairsBlock(WeatheringCopper.WeatherState.EXPOSED, COPPER_BLOCK.get().defaultBlockState(), AbstractBlock.Properties.of(Material.METAL, MaterialColor.TERRACOTTA_LIGHT_GRAY).requiresCorrectToolForDrops().strength(3.0F, 6.0F).sound(SoundInit.COPPER)));
+	public static final RegistryObject<Block> WEATHERED_COPPER_STAIRS = registerBlock("weathered_copper_stairs", () -> new WeatheringCopperStairsBlock(WeatheringCopper.WeatherState.WEATHERED, COPPER_BLOCK.get().defaultBlockState(), AbstractBlock.Properties.of(Material.METAL, MaterialColor.WARPED_STEM).requiresCorrectToolForDrops().strength(3.0F, 6.0F).sound(SoundInit.COPPER)));
+	public static final RegistryObject<Block> OXIDIZED_COPPER_STAIRS = registerBlock("oxidized_copper_stairs", () -> new WeatheringCopperStairsBlock(WeatheringCopper.WeatherState.OXIDIZED, COPPER_BLOCK.get().defaultBlockState(), AbstractBlock.Properties.of(Material.METAL, MaterialColor.WARPED_NYLIUM).requiresCorrectToolForDrops().strength(3.0F, 6.0F).sound(SoundInit.COPPER)));
+	public static final RegistryObject<Block> COPPER_VERTICAL_SLAB = registerBlock("copper_vertical_slab", () -> new WeatheringCopperVerticalSlabBlock(WeatheringCopper.WeatherState.UNAFFECTED, AbstractBlock.Properties.of(Material.METAL, MaterialColor.COLOR_ORANGE).requiresCorrectToolForDrops().strength(3.0F, 6.0F).sound(SoundInit.COPPER)));
+	public static final RegistryObject<Block> EXPOSED_COPPER_VERTICAL_SLAB = registerBlock("exposed_copper_vertical_slab", () -> new WeatheringCopperVerticalSlabBlock(WeatheringCopper.WeatherState.EXPOSED, AbstractBlock.Properties.of(Material.METAL, MaterialColor.TERRACOTTA_LIGHT_GRAY).requiresCorrectToolForDrops().strength(3.0F, 6.0F).sound(SoundInit.COPPER)));
+	public static final RegistryObject<Block> WEATHERED_COPPER_VERTICAL_SLAB = registerBlock("weathered_copper_vertical_slab", () -> new WeatheringCopperVerticalSlabBlock(WeatheringCopper.WeatherState.WEATHERED, AbstractBlock.Properties.of(Material.METAL, MaterialColor.WARPED_STEM).requiresCorrectToolForDrops().strength(3.0F, 6.0F).sound(SoundInit.COPPER)));
+	public static final RegistryObject<Block> OXIDIZED_COPPER_VERTICAL_SLAB = registerBlock("oxidized_copper_vertical_slab", () -> new WeatheringCopperVerticalSlabBlock(WeatheringCopper.WeatherState.OXIDIZED, AbstractBlock.Properties.of(Material.METAL, MaterialColor.WARPED_NYLIUM).requiresCorrectToolForDrops().strength(3.0F, 6.0F).sound(SoundInit.COPPER)));
 
 
 	//Register Method

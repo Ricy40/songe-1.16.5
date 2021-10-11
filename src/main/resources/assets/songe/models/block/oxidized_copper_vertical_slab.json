@@ -1,0 +1,8 @@
+{
+  "parent": "songe:block/vertical_slab",
+  "textures": {
+    "bottom": "songe:block/oxidized_copper",
+    "top": "songe:block/oxidized_copper",
+    "side": "songe:block/oxidized_copper"
+  }
+}
