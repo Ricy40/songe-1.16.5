@@ -1,57 +1,59 @@
 {
   "block.copper.break": {
+    "category":"block",
     "subtitle": "songe.subtitle.block.copper.break",
     "sounds": [
-      "songe:copper/copper_break1",
-      "songe:copper/copper_break2",
-      "songe:copper/copper_break3",
-      "songe:copper/copper_break4"
+      { "name": "songe:copper/copper_break1", "stream": true },
+      { "name": "songe:copper/copper_break2", "stream": true },
+      { "name": "songe:copper/copper_break3", "stream": true },
+      { "name": "songe:copper/copper_break4", "stream": true }
     ]
   },
 
   "block.copper.fall": {
+    "category":"block",
     "subtitle": "songe.subtitle.block.copper.fall",
     "sounds": [
-      "songe:copper/copper_step1",
-      "songe:copper/copper_step2",
-      "songe:copper/copper_step3",
-      "songe:copper/copper_step4",
-      "songe:copper/copper_step5",
-      "songe:copper/copper_step5"
+      { "name": "songe:copper/copper_step1", "stream": true },
+      { "name": "songe:copper/copper_step2", "stream": true },
+      { "name": "songe:copper/copper_step3", "stream": true },
+      { "name": "songe:copper/copper_step4", "stream": true },
+      { "name": "songe:copper/copper_step5", "stream": true }
     ]
   },
 
   "block.copper.hit": {
+    "category":"block",
     "subtitle": "songe.subtitle.block.copper.hit",
     "sounds": [
-      "songe:copper/copper_step1",
-      "songe:copper/copper_step2",
-      "songe:copper/copper_step3",
-      "songe:copper/copper_step4",
-      "songe:copper/copper_step5",
-      "songe:copper/copper_step5"
+      { "name": "songe:copper/copper_step1", "stream": true },
+      { "name": "songe:copper/copper_step2", "stream": true },
+      { "name": "songe:copper/copper_step3", "stream": true },
+      { "name": "songe:copper/copper_step4", "stream": true },
+      { "name": "songe:copper/copper_step5", "stream": true }
     ]
   },
 
   "block.copper.place": {
+    "category":"block",
     "subtitle": "songe.subtitle.block.copper.place",
     "sounds": [
-      "songe:copper/copper_break1",
-      "songe:copper/copper_break2",
-      "songe:copper/copper_break3",
-      "songe:copper/copper_break4"
+      { "name": "songe:copper/copper_break1", "stream": true },
+      { "name": "songe:copper/copper_break2", "stream": true },
+      { "name": "songe:copper/copper_break3", "stream": true },
+      { "name": "songe:copper/copper_break4", "stream": true }
     ]
   },
 
   "block.copper.step": {
+    "category":"block",
     "subtitle": "songe.subtitle.block.copper.step",
     "sounds": [
-      "songe:copper/copper_step1",
-      "songe:copper/copper_step2",
-      "songe:copper/copper_step3",
-      "songe:copper/copper_step4",
-      "songe:copper/copper_step5",
-      "songe:copper/copper_step5"
+      { "name": "songe:copper/copper_step1", "stream": true },
+      { "name": "songe:copper/copper_step2", "stream": true },
+      { "name": "songe:copper/copper_step3", "stream": true },
+      { "name": "songe:copper/copper_step4", "stream": true },
+      { "name": "songe:copper/copper_step5", "stream": true }
     ]
   }
 }

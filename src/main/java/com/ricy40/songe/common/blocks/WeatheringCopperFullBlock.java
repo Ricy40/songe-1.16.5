@@ -5,6 +5,7 @@ import java.util.function.Supplier;
 
 import com.google.common.base.Suppliers;
 import com.google.common.collect.BiMap;
+import com.google.common.collect.HashBiMap;
 import com.google.common.collect.ImmutableBiMap;
 import com.ricy40.songe.core.init.BlockInit;
 import com.ricy40.songe.core.interfaces.WeatheringCopper;
@@ -21,8 +22,7 @@ import net.minecraft.util.math.BlockRayTraceResult;
 import net.minecraft.world.World;
 import net.minecraft.world.server.ServerWorld;
 import net.minecraftforge.common.ToolType;
-
-import javax.swing.*;
+import net.minecraftforge.fml.RegistryObject;
 
 public class WeatheringCopperFullBlock extends Block implements WeatheringCopper {
     private final WeatheringCopper.WeatherState weatherState;
@@ -40,27 +40,26 @@ public class WeatheringCopperFullBlock extends Block implements WeatheringCopper
     @Override
     public ActionResultType use(BlockState state, World worldIn, BlockPos pos, PlayerEntity playerIn, Hand handIn, BlockRayTraceResult rayTrace) {
 
-        BlockState newState = WAXING_BLOCK.get().get(state.getBlock()).defaultBlockState().getBlockState();
-        BlockState oldState = AXING_WAX_BLOCK.get().get(state.getBlock()).defaultBlockState().getBlockState();
+        BlockState newState = WAXING_BLOCK.get().get(state.getBlock()).defaultBlockState();
+        //BlockState oldState = AXING_WAX_BLOCK.get().get(state.getBlock()).defaultBlockState();
         ItemStack itemStack = playerIn.getItemInHand(handIn);
         Item item = itemStack.getItem();
 
-        if (!worldIn.isClientSide) {
-            if (item == Items.HONEYCOMB) {
+        if (item == Items.HONEYCOMB) {
+            if (!worldIn.isClientSide) {
                 worldIn.setBlock(pos, newState, 11);
-                worldIn.playLocalSound(pos.getX(), pos.getY(), pos.getZ(), SoundEvents.HONEY_BLOCK_SLIDE, SoundCategory.BLOCKS,1.0f, 1.0f, true);
-                if (!playerIn.isCreative()) {
-                    itemStack.shrink(1);
-                }
-                worldIn.levelEvent(playerIn, 3003, pos, 0);
-            } else if (itemStack.getToolTypes().contains(ToolType.AXE)) {
-                worldIn.setBlock(pos, oldState, 11);
-                if (!playerIn.isCreative()) {
-                    item.damageItem(itemStack, 1, playerIn, player -> player.broadcastBreakEvent(handIn));
-                }
             }
-        }
-
+            worldIn.playSound(playerIn, pos.getX(), pos.getY(), pos.getZ(), SoundEvents.HONEY_BLOCK_PLACE, SoundCategory.BLOCKS, 10.0f, 1.0f);
+            if (!playerIn.isCreative()) {
+                itemStack.shrink(1);
+            }
+            worldIn.levelEvent(playerIn, 3003, pos, 0);
+        } /*else if (itemStack.getToolTypes().contains(ToolType.AXE)) {
+             worldIn.setBlock(pos, oldState, 11);
+             if (!playerIn.isCreative()) {
+             item.damageItem(itemStack, 1, playerIn, player -> player.broadcastBreakEvent(handIn));
+            }
+        }*/
 
         return super.use(state, worldIn, pos, playerIn, handIn, rayTrace);
     }
@@ -83,5 +82,4 @@ public class WeatheringCopperFullBlock extends Block implements WeatheringCopper
     Supplier<BiMap<Block, Block>> AXING_WAX_BLOCK = Suppliers.memoize(() -> {
         return WAXING_BLOCK.get().inverse();
     });
-
 }
