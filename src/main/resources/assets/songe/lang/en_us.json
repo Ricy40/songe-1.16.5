@@ -37,6 +37,8 @@
 	"block.songe.weathered_copper_vertical_slab" : "Weathered Copper Vertical Slab",
 	"block.songe.oxidized_copper_vertical_slab" : "Oxidized Copper Vertical Slab",
 
+	"block.songe.waxed_copper_block" : "Waxed Copper Block",
+
 	"tooltip.songe.hold_shift" : "Hold \u00A7eShift \u00A77for More Information",
 
 	"itemGroup.songetab" : "Songe"

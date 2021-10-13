@@ -29,6 +29,7 @@ public interface WeatheringCopper extends ChangeOverTimeBlock<WeatheringCopper.W
                 
                 .build();
     });
+
     Supplier<BiMap<Block, Block>> PREVIOUS_BY_BLOCK = Suppliers.memoize(() -> {
         return NEXT_BY_BLOCK.get().inverse();
     });

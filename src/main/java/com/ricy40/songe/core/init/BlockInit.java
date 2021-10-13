@@ -15,6 +15,7 @@ import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 
+import java.util.Properties;
 import java.util.function.Supplier;
 
 public class BlockInit {
@@ -50,6 +51,10 @@ public class BlockInit {
 	public static final RegistryObject<Block> EXPOSED_COPPER_VERTICAL_SLAB = registerBlock("exposed_copper_vertical_slab", () -> new WeatheringCopperVerticalSlabBlock(WeatheringCopper.WeatherState.EXPOSED, AbstractBlock.Properties.of(Material.METAL, MaterialColor.TERRACOTTA_LIGHT_GRAY).requiresCorrectToolForDrops().strength(3.0F, 6.0F).sound(SoundInit.COPPER)));
 	public static final RegistryObject<Block> WEATHERED_COPPER_VERTICAL_SLAB = registerBlock("weathered_copper_vertical_slab", () -> new WeatheringCopperVerticalSlabBlock(WeatheringCopper.WeatherState.WEATHERED, AbstractBlock.Properties.of(Material.METAL, MaterialColor.WARPED_STEM).requiresCorrectToolForDrops().strength(3.0F, 6.0F).sound(SoundInit.COPPER)));
 	public static final RegistryObject<Block> OXIDIZED_COPPER_VERTICAL_SLAB = registerBlock("oxidized_copper_vertical_slab", () -> new WeatheringCopperVerticalSlabBlock(WeatheringCopper.WeatherState.OXIDIZED, AbstractBlock.Properties.of(Material.METAL, MaterialColor.WARPED_NYLIUM).requiresCorrectToolForDrops().strength(3.0F, 6.0F).sound(SoundInit.COPPER)));
+
+	//Waxed Copper
+
+	public static final RegistryObject<Block> WAXED_COPPER_BLOCK = registerBlock("waxed_copper_block", () -> new Block(AbstractBlock.Properties.of(Material.METAL, MaterialColor.COLOR_ORANGE).requiresCorrectToolForDrops().strength(3.0F, 6.0F).sound(SoundInit.COPPER)));
 
 
 	//Register Method
