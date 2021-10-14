@@ -1,12 +1,8 @@
 package com.ricy40.songe.common.blocks;
 
 import java.util.Random;
-import java.util.function.Supplier;
 
-import com.google.common.base.Suppliers;
-import com.google.common.collect.BiMap;
-import com.google.common.collect.ImmutableBiMap;
-import com.ricy40.songe.core.init.BlockInit;
+import com.ricy40.songe.core.init.SoundInit;
 import com.ricy40.songe.core.interfaces.WaxingBlockList;
 import com.ricy40.songe.core.interfaces.WeatheringCopper;
 import net.minecraft.block.AbstractBlock;
@@ -40,7 +36,7 @@ public class WeatheringCopperFullBlock extends Block implements WeatheringCopper
     public ActionResultType use(BlockState state, World worldIn, BlockPos pos, PlayerEntity playerIn, Hand handIn, BlockRayTraceResult rayTrace) {
 
         BlockState newState = WAXING_BLOCK.get().get(state.getBlock()).defaultBlockState();
-        BlockState oldState = PREVIOUS_BY_BLOCK.get().get(state.getBlock()).defaultBlockState();
+        //BlockState oldState = PREVIOUS_BY_BLOCK.get().get(state.getBlock()).defaultBlockState();
         ItemStack itemStack = playerIn.getItemInHand(handIn);
         Item item = itemStack.getItem();
 
@@ -48,17 +44,18 @@ public class WeatheringCopperFullBlock extends Block implements WeatheringCopper
             if (!worldIn.isClientSide) {
                 worldIn.setBlock(pos, newState, 11);
             }
-            worldIn.playSound(playerIn, pos.getX(), pos.getY(), pos.getZ(), SoundEvents.HONEY_BLOCK_PLACE, SoundCategory.BLOCKS, 10.0f, 1.0f);
+            worldIn.playSound(playerIn, pos.getX(), pos.getY(), pos.getZ(), SoundInit.HONEYCOMB_WAX_ON.get(), SoundCategory.BLOCKS, 10.0f, 1.0f);
             if (!playerIn.isCreative()) {
                 itemStack.shrink(1);
             }
             worldIn.levelEvent(playerIn, 3003, pos, 0);
-        } else if (itemStack.getToolTypes().contains(ToolType.AXE)) {
+        } /*else if (itemStack.getToolTypes().contains(ToolType.AXE)) {
              worldIn.setBlock(pos, oldState, 11);
+             worldIn.playSound(playerIn, pos.getX(), pos.getY(), pos.getZ(), SoundInit.AXE_SCRAPE.get(), SoundCategory.BLOCKS, 10.0f, 1.0f);
              if (!playerIn.isCreative()) {
-             item.damageItem(itemStack, 1, playerIn, player -> player.broadcastBreakEvent(handIn));
-            }
-        }
+                item.damageItem(itemStack, 1, playerIn, player -> player.broadcastBreakEvent(handIn));
+             }
+        }*/
 
         return super.use(state, worldIn, pos, playerIn, handIn, rayTrace);
     }

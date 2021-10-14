@@ -55,6 +55,8 @@ public class BlockInit {
 	//Waxed Copper
 
 	public static final RegistryObject<Block> WAXED_COPPER_BLOCK = registerBlock("waxed_copper_block", () -> new WaxingCopperFullBlock(AbstractBlock.Properties.of(Material.METAL, MaterialColor.COLOR_ORANGE).requiresCorrectToolForDrops().strength(3.0F, 6.0F).sound(SoundInit.COPPER)));
+	public static final RegistryObject<Block> WAXED_EXPOSED_COPPER = registerBlock("waxed_exposed_copper", () -> new WaxingCopperFullBlock(AbstractBlock.Properties.of(Material.METAL, MaterialColor.COLOR_ORANGE).requiresCorrectToolForDrops().strength(3.0F, 6.0F).sound(SoundInit.COPPER)));
+	public static final RegistryObject<Block> WAXED_WEATHERED_COPPER = registerBlock("waxed_weathered_copper", () -> new WaxingCopperFullBlock(AbstractBlock.Properties.of(Material.METAL, MaterialColor.COLOR_ORANGE).requiresCorrectToolForDrops().strength(3.0F, 6.0F).sound(SoundInit.COPPER)));
 
 
 	//Register Method

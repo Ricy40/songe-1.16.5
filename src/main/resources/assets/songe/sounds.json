@@ -3,10 +3,10 @@
     "category":"block",
     "subtitle": "songe.subtitle.block.copper.break",
     "sounds": [
-      { "name": "songe:copper/copper_break1", "stream": true },
-      { "name": "songe:copper/copper_break2", "stream": true },
-      { "name": "songe:copper/copper_break3", "stream": true },
-      { "name": "songe:copper/copper_break4", "stream": true }
+      { "name": "songe:block/copper_break1", "stream": true },
+      { "name": "songe:block/copper_break2", "stream": true },
+      { "name": "songe:block/copper_break3", "stream": true },
+      { "name": "songe:block/copper_break4", "stream": true }
     ]
   },
 
@@ -14,11 +14,11 @@
     "category":"block",
     "subtitle": "songe.subtitle.block.copper.fall",
     "sounds": [
-      { "name": "songe:copper/copper_step1", "stream": true },
-      { "name": "songe:copper/copper_step2", "stream": true },
-      { "name": "songe:copper/copper_step3", "stream": true },
-      { "name": "songe:copper/copper_step4", "stream": true },
-      { "name": "songe:copper/copper_step5", "stream": true }
+      { "name": "songe:block/copper_step1", "stream": true },
+      { "name": "songe:block/copper_step2", "stream": true },
+      { "name": "songe:block/copper_step3", "stream": true },
+      { "name": "songe:block/copper_step4", "stream": true },
+      { "name": "songe:block/copper_step5", "stream": true }
     ]
   },
 
@@ -26,11 +26,11 @@
     "category":"block",
     "subtitle": "songe.subtitle.block.copper.hit",
     "sounds": [
-      { "name": "songe:copper/copper_step1", "stream": true },
-      { "name": "songe:copper/copper_step2", "stream": true },
-      { "name": "songe:copper/copper_step3", "stream": true },
-      { "name": "songe:copper/copper_step4", "stream": true },
-      { "name": "songe:copper/copper_step5", "stream": true }
+      { "name": "songe:block/copper_step1", "stream": true },
+      { "name": "songe:block/copper_step2", "stream": true },
+      { "name": "songe:block/copper_step3", "stream": true },
+      { "name": "songe:block/copper_step4", "stream": true },
+      { "name": "songe:block/copper_step5", "stream": true }
     ]
   },
 
@@ -38,10 +38,10 @@
     "category":"block",
     "subtitle": "songe.subtitle.block.copper.place",
     "sounds": [
-      { "name": "songe:copper/copper_break1", "stream": true },
-      { "name": "songe:copper/copper_break2", "stream": true },
-      { "name": "songe:copper/copper_break3", "stream": true },
-      { "name": "songe:copper/copper_break4", "stream": true }
+      { "name": "songe:block/copper_break1", "stream": true },
+      { "name": "songe:block/copper_break2", "stream": true },
+      { "name": "songe:block/copper_break3", "stream": true },
+      { "name": "songe:block/copper_break4", "stream": true }
     ]
   },
 
@@ -49,11 +49,41 @@
     "category":"block",
     "subtitle": "songe.subtitle.block.copper.step",
     "sounds": [
-      { "name": "songe:copper/copper_step1", "stream": true },
-      { "name": "songe:copper/copper_step2", "stream": true },
-      { "name": "songe:copper/copper_step3", "stream": true },
-      { "name": "songe:copper/copper_step4", "stream": true },
-      { "name": "songe:copper/copper_step5", "stream": true }
+      { "name": "songe:block/copper_step1", "stream": true },
+      { "name": "songe:block/copper_step2", "stream": true },
+      { "name": "songe:block/copper_step3", "stream": true },
+      { "name": "songe:block/copper_step4", "stream": true },
+      { "name": "songe:block/copper_step5", "stream": true }
+    ]
+  },
+
+  "item.axe.scrape": {
+    "category":"block",
+    "subtitle": "songe.subtitle.item.axe.scrape",
+    "sounds": [
+      { "name": "songe:item/scrape1", "stream": true },
+      { "name": "songe:item/scrape2", "stream": true },
+      { "name": "songe:item/scrape3", "stream": true }
+    ]
+  },
+
+  "item.axe.wax_off": {
+    "category":"block",
+    "subtitle": "songe.subtitle.item.axe.wax_off",
+    "sounds": [
+      { "name": "songe:item/wax_off1", "stream": true },
+      { "name": "songe:item/wax_off2", "stream": true },
+      { "name": "songe:item/wax_off3", "stream": true }
+    ]
+  },
+
+  "item.honeycomb.wax_on": {
+    "category":"block",
+    "subtitle": "songe.subtitle.item.honeycomb.wax_on",
+    "sounds": [
+      {"name": "songe:item/wax_on1", "stream": true},
+      {"name": "songe:item/wax_on2", "stream": true},
+      {"name": "songe:item/wax_on3", "stream": true}
     ]
   }
 }

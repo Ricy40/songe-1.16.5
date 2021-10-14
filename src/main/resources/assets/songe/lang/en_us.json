@@ -38,6 +38,8 @@
 	"block.songe.oxidized_copper_vertical_slab" : "Oxidized Copper Vertical Slab",
 
 	"block.songe.waxed_copper_block" : "Waxed Copper Block",
+	"block.songe.waxed_exposed_copper" : "Waxed Exposed Copper",
+	"block.songe.waxed_weathered_copper" : "Waxed Weathered Copper",
 
 	"tooltip.songe.hold_shift" : "Hold \u00A7eShift \u00A77for More Information",
 

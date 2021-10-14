@@ -12,6 +12,8 @@ public interface WaxingBlockList {
     Supplier<BiMap<Block, Block>> WAXING_BLOCK = Suppliers.memoize(() -> {
         return ImmutableBiMap.<Block, Block>builder()
                 .put(BlockInit.COPPER_BLOCK.get(), BlockInit.WAXED_COPPER_BLOCK.get())
+                .put(BlockInit.EXPOSED_COPPER.get(), BlockInit.WAXED_EXPOSED_COPPER.get())
+                .put(BlockInit.WEATHERED_COPPER.get(), BlockInit.WAXED_WEATHERED_COPPER.get())
 
                 .build();
     });
