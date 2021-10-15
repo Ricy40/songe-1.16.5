@@ -35,6 +35,7 @@ public interface WeatheringCopper extends ChangeOverTimeBlock<WeatheringCopper.W
         return NEXT_BY_BLOCK.get().inverse();
     });
 
+
     static Optional<Block> getPrevious(Block block) {
         return Optional.ofNullable(PREVIOUS_BY_BLOCK.get().get(block));
     }

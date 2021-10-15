@@ -1,5 +1,5 @@
- {
+{
    "variants": {
-     "": { "model": "songe:block/waxed_copper_block" }
+     "": { "model": "songe:block/copper_block" }
    }
  }

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "songe:block/oxidized_copper_slab"
+    },
+    "type=double": {
+      "model": "songe:block/oxidized_copper"
+    },
+    "type=top": {
+      "model": "songe:block/oxidized_copper_slab_top"
+    }
+  }
+}

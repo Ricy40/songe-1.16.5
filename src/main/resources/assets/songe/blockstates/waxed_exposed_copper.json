@@ -1,5 +1,5 @@
 {
   "variants": {
-    "": { "model": "songe:block/waxed_exposed_copper" }
+    "": { "model": "songe:block/exposed_copper" }
   }
 }
