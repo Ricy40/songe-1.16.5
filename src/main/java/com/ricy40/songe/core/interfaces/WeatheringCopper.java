@@ -12,6 +12,7 @@ import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 
 public interface WeatheringCopper extends ChangeOverTimeBlock<WeatheringCopper.WeatherState> {
+
     Supplier<BiMap<Block, Block>> NEXT_BY_BLOCK = Suppliers.memoize(() -> {
         return ImmutableBiMap.<Block, Block>builder()
                 .put(BlockInit.COPPER_BLOCK.get(), BlockInit.EXPOSED_COPPER.get())
@@ -26,7 +27,7 @@ public interface WeatheringCopper extends ChangeOverTimeBlock<WeatheringCopper.W
                 .put(BlockInit.COPPER_VERTICAL_SLAB.get(), BlockInit.EXPOSED_COPPER_VERTICAL_SLAB.get())
                 .put(BlockInit.EXPOSED_COPPER_VERTICAL_SLAB.get(), BlockInit.WEATHERED_COPPER_VERTICAL_SLAB.get())
                 .put(BlockInit.WEATHERED_COPPER_VERTICAL_SLAB.get(), BlockInit.OXIDIZED_COPPER_VERTICAL_SLAB.get())
-                
+
                 .build();
     });
 
@@ -79,4 +80,5 @@ public interface WeatheringCopper extends ChangeOverTimeBlock<WeatheringCopper.W
         WEATHERED,
         OXIDIZED;
     }
+
 }

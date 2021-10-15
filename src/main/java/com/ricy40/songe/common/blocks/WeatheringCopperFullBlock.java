@@ -27,16 +27,18 @@ public class WeatheringCopperFullBlock extends Block implements WeatheringCopper
         this.weatherState = wthrState;
     }
 
+    @SuppressWarnings("Deprecation")
     @Override
     public void randomTick(BlockState state, ServerWorld worldIn, BlockPos pos, Random rand) {
         this.onRandomTick(state, worldIn, pos, rand);
     }
 
+    @SuppressWarnings("Deprecation")
     @Override
     public ActionResultType use(BlockState state, World worldIn, BlockPos pos, PlayerEntity playerIn, Hand handIn, BlockRayTraceResult rayTrace) {
 
         BlockState newState = WAXING_BLOCK.get().get(state.getBlock()).defaultBlockState();
-        //BlockState oldState = PREVIOUS_BY_BLOCK.get().get(state.getBlock()).defaultBlockState();
+        BlockState oldState = PREVIOUS_BY_BLOCK.get().get(state.getBlock()).defaultBlockState();
         ItemStack itemStack = playerIn.getItemInHand(handIn);
         Item item = itemStack.getItem();
 
@@ -49,13 +51,13 @@ public class WeatheringCopperFullBlock extends Block implements WeatheringCopper
                 itemStack.shrink(1);
             }
             worldIn.levelEvent(playerIn, 3003, pos, 0);
-        } /*else if (itemStack.getToolTypes().contains(ToolType.AXE)) {
+        } else if (itemStack.getToolTypes().contains(ToolType.AXE)) {
              worldIn.setBlock(pos, oldState, 11);
              worldIn.playSound(playerIn, pos.getX(), pos.getY(), pos.getZ(), SoundInit.AXE_SCRAPE.get(), SoundCategory.BLOCKS, 10.0f, 1.0f);
              if (!playerIn.isCreative()) {
                 item.damageItem(itemStack, 1, playerIn, player -> player.broadcastBreakEvent(handIn));
              }
-        }*/
+        }
 
         return super.use(state, worldIn, pos, playerIn, handIn, rayTrace);
     }
