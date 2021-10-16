@@ -12,6 +12,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
+import net.minecraft.state.Property;
 import net.minecraft.util.*;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.BlockRayTraceResult;
@@ -40,10 +41,17 @@ public class WeatheringCopperFullBlock extends Block implements WeatheringCopper
         ItemStack itemStack = playerIn.getItemInHand(handIn);
         Item item = itemStack.getItem();
 
+
+
         if (WAXING_BLOCK.get().get(state.getBlock()) != null){
             BlockState newState = WAXING_BLOCK.get().get(state.getBlock()).defaultBlockState();
             if (item == Items.HONEYCOMB) {
                 if (!worldIn.isClientSide) {
+                    for (Property property : state.getProperties()) {
+                        if (newState.hasProperty(property)) {
+                            newState = newState.setValue(property, state.getValue(property));
+                        }
+                    }
                     worldIn.setBlock(pos, newState, 11);
                 }
                 worldIn.playSound(playerIn, pos.getX(), pos.getY(), pos.getZ(), SoundInit.HONEYCOMB_WAX_ON.get(), SoundCategory.BLOCKS, 10.0f, 1.0f);
@@ -58,7 +66,14 @@ public class WeatheringCopperFullBlock extends Block implements WeatheringCopper
         if (PREVIOUS_BY_BLOCK.get().get(state.getBlock()) != null) {
             BlockState oldState = PREVIOUS_BY_BLOCK.get().get(state.getBlock()).defaultBlockState();
             if (itemStack.getToolTypes().contains(ToolType.AXE)) {
-                worldIn.setBlock(pos, oldState, 11);
+                if (!worldIn.isClientSide) {
+                    for (Property property : state.getProperties()) {
+                        if (oldState.hasProperty(property)) {
+                            oldState = oldState.setValue(property, state.getValue(property));
+                        }
+                    }
+                    worldIn.setBlock(pos, oldState, 11);
+                }
                 worldIn.playSound(playerIn, pos.getX(), pos.getY(), pos.getZ(), SoundInit.AXE_SCRAPE.get(), SoundCategory.BLOCKS, 10.0f, 1.0f);
                 if (!playerIn.isCreative()) {
                     item.damageItem(itemStack, 1, playerIn, player -> player.broadcastBreakEvent(handIn));
