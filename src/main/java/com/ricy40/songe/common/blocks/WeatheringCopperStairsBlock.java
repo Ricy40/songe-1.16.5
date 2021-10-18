@@ -40,18 +40,20 @@ public class WeatheringCopperStairsBlock extends StairsBlock implements Weatheri
         ItemStack itemStack = playerIn.getItemInHand(handIn);
         Item item = itemStack.getItem();
 
-
-
         if (WAXING_BLOCK.get().get(state.getBlock()) != null){
             BlockState newState = WAXING_BLOCK.get().get(state.getBlock()).defaultBlockState();
+            System.out.println(newState);
             if (item == Items.HONEYCOMB) {
                 if (!worldIn.isClientSide) {
                     for (Property property : state.getProperties()) {
                         if (newState.hasProperty(property)) {
+                            System.out.println(property);
                             newState = newState.setValue(property, state.getValue(property));
+                            System.out.println(newState);
                         }
                     }
                     worldIn.setBlock(pos, newState, 11);
+                    System.out.println(worldIn.getBlockState(pos));
                 }
                 worldIn.playSound(playerIn, pos.getX(), pos.getY(), pos.getZ(), SoundInit.HONEYCOMB_WAX_ON.get(), SoundCategory.BLOCKS, 10.0f, 1.0f);
                 if (!playerIn.isCreative()) {
