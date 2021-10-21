@@ -28,6 +28,32 @@ public interface WeatheringCopper extends ChangeOverTimeBlock<WeatheringCopper.W
                 .put(BlockInit.EXPOSED_COPPER_VERTICAL_SLAB.get(), BlockInit.WEATHERED_COPPER_VERTICAL_SLAB.get())
                 .put(BlockInit.WEATHERED_COPPER_VERTICAL_SLAB.get(), BlockInit.OXIDIZED_COPPER_VERTICAL_SLAB.get())
 
+                .put(BlockInit.COPPER_TILES.get(), BlockInit.EXPOSED_COPPER_TILES.get())
+                .put(BlockInit.EXPOSED_COPPER_TILES.get(), BlockInit.WEATHERED_COPPER_TILES.get())
+                .put(BlockInit.WEATHERED_COPPER_TILES.get(), BlockInit.OXIDIZED_COPPER_TILES.get())
+                .put(BlockInit.COPPER_TILES_SLAB.get(), BlockInit.EXPOSED_COPPER_TILES_SLAB.get())
+                .put(BlockInit.EXPOSED_COPPER_TILES_SLAB.get(), BlockInit.WEATHERED_COPPER_TILES_SLAB.get())
+                .put(BlockInit.WEATHERED_COPPER_TILES_SLAB.get(), BlockInit.OXIDIZED_COPPER_TILES_SLAB.get())
+                .put(BlockInit.COPPER_TILES_STAIRS.get(), BlockInit.EXPOSED_COPPER_TILES_STAIRS.get())
+                .put(BlockInit.EXPOSED_COPPER_TILES_STAIRS.get(), BlockInit.WEATHERED_COPPER_TILES_STAIRS.get())
+                .put(BlockInit.WEATHERED_COPPER_TILES_STAIRS.get(), BlockInit.OXIDIZED_COPPER_TILES_STAIRS.get())
+                .put(BlockInit.COPPER_TILES_VERTICAL_SLAB.get(), BlockInit.EXPOSED_COPPER_TILES_VERTICAL_SLAB.get())
+                .put(BlockInit.EXPOSED_COPPER_TILES_VERTICAL_SLAB.get(), BlockInit.WEATHERED_COPPER_TILES_VERTICAL_SLAB.get())
+                .put(BlockInit.WEATHERED_COPPER_TILES_VERTICAL_SLAB.get(), BlockInit.OXIDIZED_COPPER_TILES_VERTICAL_SLAB.get())
+
+                .put(BlockInit.COPPER_SHINGLES.get(), BlockInit.EXPOSED_COPPER_SHINGLES.get())
+                .put(BlockInit.EXPOSED_COPPER_SHINGLES.get(), BlockInit.WEATHERED_COPPER_SHINGLES.get())
+                .put(BlockInit.WEATHERED_COPPER_SHINGLES.get(), BlockInit.OXIDIZED_COPPER_SHINGLES.get())
+                .put(BlockInit.COPPER_SHINGLES_SLAB.get(), BlockInit.EXPOSED_COPPER_SHINGLES_SLAB.get())
+                .put(BlockInit.EXPOSED_COPPER_SHINGLES_SLAB.get(), BlockInit.WEATHERED_COPPER_SHINGLES_SLAB.get())
+                .put(BlockInit.WEATHERED_COPPER_SHINGLES_SLAB.get(), BlockInit.OXIDIZED_COPPER_SHINGLES_SLAB.get())
+                .put(BlockInit.COPPER_SHINGLES_STAIRS.get(), BlockInit.EXPOSED_COPPER_SHINGLES_STAIRS.get())
+                .put(BlockInit.EXPOSED_COPPER_SHINGLES_STAIRS.get(), BlockInit.WEATHERED_COPPER_SHINGLES_STAIRS.get())
+                .put(BlockInit.WEATHERED_COPPER_SHINGLES_STAIRS.get(), BlockInit.OXIDIZED_COPPER_SHINGLES_STAIRS.get())
+                .put(BlockInit.COPPER_SHINGLES_VERTICAL_SLAB.get(), BlockInit.EXPOSED_COPPER_SHINGLES_VERTICAL_SLAB.get())
+                .put(BlockInit.EXPOSED_COPPER_SHINGLES_VERTICAL_SLAB.get(), BlockInit.WEATHERED_COPPER_SHINGLES_VERTICAL_SLAB.get())
+                .put(BlockInit.WEATHERED_COPPER_SHINGLES_VERTICAL_SLAB.get(), BlockInit.OXIDIZED_COPPER_SHINGLES_VERTICAL_SLAB.get())
+                
                 .build();
     });
 
