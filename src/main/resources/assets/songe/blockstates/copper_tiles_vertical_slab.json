@@ -13,6 +13,6 @@
       "model": "songe:block/copper_tiles_vertical_slab", "y": 270, "uvlock": true
     },
     "type=double": {
-      "model": "songe:block/copper_tilesk" }
+      "model": "songe:block/copper_tiles" }
   }
 }
