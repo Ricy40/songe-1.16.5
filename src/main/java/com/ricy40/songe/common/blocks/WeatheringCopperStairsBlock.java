@@ -80,7 +80,7 @@ public class WeatheringCopperStairsBlock extends StairsBlock implements Weatheri
             }
         }
 
-        return ActionResultType.SUCCESS;
+        return ActionResultType.PASS;
     }
 
     public boolean isRandomlyTicking(BlockState state) {

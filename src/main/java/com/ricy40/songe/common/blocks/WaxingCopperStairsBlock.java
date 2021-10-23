@@ -49,6 +49,6 @@ public class WaxingCopperStairsBlock extends StairsBlock implements WaxingBlockL
             }
         }
 
-        return ActionResultType.SUCCESS;
+        return ActionResultType.PASS;
     }
 }
