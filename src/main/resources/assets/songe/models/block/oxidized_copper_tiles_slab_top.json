@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "songe:block/oxidized_tiles",
+    "top": "songe:block/oxidized_tiles",
+    "side": "songe:block/oxidized_tiles"
+  }
+}

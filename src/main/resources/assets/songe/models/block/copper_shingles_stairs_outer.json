@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "songe:block/copper_shingles",
+    "top": "songe:block/copper_shingles",
+    "side": "songe:block/copper_shingles"
+  }
+}

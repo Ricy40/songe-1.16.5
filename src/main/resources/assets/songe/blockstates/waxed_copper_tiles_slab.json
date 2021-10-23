@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "songe:block/copper_tiles_slab"
+    },
+    "type=double": {
+      "model": "songe:block/copper_tiles"
+    },
+    "type=top": {
+      "model": "songe:block/copper_tiles_slab_top"
+    }
+  }
+}

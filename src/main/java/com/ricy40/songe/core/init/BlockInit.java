@@ -126,7 +126,7 @@ public class BlockInit {
 	public static final RegistryObject<Block> WAXED_COPPER_TILES_VERTICAL_SLAB = registerBlock("waxed_copper_tiles_vertical_slab", () -> new WaxingCopperVerticalSlabBlock(AbstractBlock.Properties.of(Material.METAL, MaterialColor.COLOR_ORANGE).requiresCorrectToolForDrops().strength(3.0F, 6.0F).sound(SoundInit.COPPER)));
 	public static final RegistryObject<Block> WAXED_EXPOSED_COPPER_TILES_VERTICAL_SLAB = registerBlock("waxed_exposed_copper_tiles_vertical_slab", () -> new WaxingCopperVerticalSlabBlock(AbstractBlock.Properties.of(Material.METAL, MaterialColor.COLOR_ORANGE).requiresCorrectToolForDrops().strength(3.0F, 6.0F).sound(SoundInit.COPPER)));
 	public static final RegistryObject<Block> WAXED_WEATHERED_COPPER_TILES_VERTICAL_SLAB = registerBlock("waxed_weathered_copper_tiles_vertical_slab", () -> new WaxingCopperVerticalSlabBlock(AbstractBlock.Properties.of(Material.METAL, MaterialColor.COLOR_ORANGE).requiresCorrectToolForDrops().strength(3.0F, 6.0F).sound(SoundInit.COPPER)));
-	public static final RegistryObject<Block> WAXED_OXIDIZED_COPPER_TILES_VERTICAL_SLAB = registerBlock("waxed_oxidized_copper_vertical_slab", () -> new WaxingCopperVerticalSlabBlock(AbstractBlock.Properties.of(Material.METAL, MaterialColor.COLOR_ORANGE).requiresCorrectToolForDrops().strength(3.0F, 6.0F).sound(SoundInit.COPPER)));
+	public static final RegistryObject<Block> WAXED_OXIDIZED_COPPER_TILES_VERTICAL_SLAB = registerBlock("waxed_oxidized_copper_tiles_vertical_slab", () -> new WaxingCopperVerticalSlabBlock(AbstractBlock.Properties.of(Material.METAL, MaterialColor.COLOR_ORANGE).requiresCorrectToolForDrops().strength(3.0F, 6.0F).sound(SoundInit.COPPER)));
 
 	//Waxed Shingles
 
@@ -145,7 +145,7 @@ public class BlockInit {
 	public static final RegistryObject<Block> WAXED_COPPER_SHINGLES_VERTICAL_SLAB = registerBlock("waxed_copper_shingles_vertical_slab", () -> new WaxingCopperVerticalSlabBlock(AbstractBlock.Properties.of(Material.METAL, MaterialColor.COLOR_ORANGE).requiresCorrectToolForDrops().strength(3.0F, 6.0F).sound(SoundInit.COPPER)));
 	public static final RegistryObject<Block> WAXED_EXPOSED_COPPER_SHINGLES_VERTICAL_SLAB = registerBlock("waxed_exposed_copper_shingles_vertical_slab", () -> new WaxingCopperVerticalSlabBlock(AbstractBlock.Properties.of(Material.METAL, MaterialColor.COLOR_ORANGE).requiresCorrectToolForDrops().strength(3.0F, 6.0F).sound(SoundInit.COPPER)));
 	public static final RegistryObject<Block> WAXED_WEATHERED_COPPER_SHINGLES_VERTICAL_SLAB = registerBlock("waxed_weathered_copper_shingles_vertical_slab", () -> new WaxingCopperVerticalSlabBlock(AbstractBlock.Properties.of(Material.METAL, MaterialColor.COLOR_ORANGE).requiresCorrectToolForDrops().strength(3.0F, 6.0F).sound(SoundInit.COPPER)));
-	public static final RegistryObject<Block> WAXED_OXIDIZED_COPPER_SHINGLES_VERTICAL_SLAB = registerBlock("waxed_oxidized_copper_vertical_slab", () -> new WaxingCopperVerticalSlabBlock(AbstractBlock.Properties.of(Material.METAL, MaterialColor.COLOR_ORANGE).requiresCorrectToolForDrops().strength(3.0F, 6.0F).sound(SoundInit.COPPER)));
+	public static final RegistryObject<Block> WAXED_OXIDIZED_COPPER_SHINGLES_VERTICAL_SLAB = registerBlock("waxed_oxidized_copper_shingles_vertical_slab", () -> new WaxingCopperVerticalSlabBlock(AbstractBlock.Properties.of(Material.METAL, MaterialColor.COLOR_ORANGE).requiresCorrectToolForDrops().strength(3.0F, 6.0F).sound(SoundInit.COPPER)));
 
 
 	//Register Method

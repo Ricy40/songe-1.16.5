@@ -48,6 +48,6 @@ public class WaxingCopperStairsBlock extends StairsBlock implements WaxingBlockL
             }
         }
 
-        return super.use(state, worldIn, pos, playerIn, handIn, rayTrace);
+        return ActionResultType.SUCCESS;
     }
 }
