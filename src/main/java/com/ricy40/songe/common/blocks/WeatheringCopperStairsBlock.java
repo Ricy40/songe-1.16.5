@@ -50,7 +50,7 @@ public class WeatheringCopperStairsBlock extends StairsBlock implements Weatheri
                         }
                     }
                     worldIn.setBlock(pos, newState, 11);
-                    System.out.println(worldIn.getBlockState(pos));
+                    playerIn.swing(handIn);
                 }
                 worldIn.playSound(playerIn, pos.getX(), pos.getY(), pos.getZ(), SoundInit.HONEYCOMB_WAX_ON.get(), SoundCategory.BLOCKS, 10.0f, 1.0f);
                 if (!playerIn.isCreative()) {
@@ -71,6 +71,7 @@ public class WeatheringCopperStairsBlock extends StairsBlock implements Weatheri
                         }
                     }
                     worldIn.setBlock(pos, oldState, 11);
+                    playerIn.swing(handIn);
                 }
                 worldIn.playSound(playerIn, pos.getX(), pos.getY(), pos.getZ(), SoundInit.AXE_SCRAPE.get(), SoundCategory.BLOCKS, 10.0f, 1.0f);
                 if (!playerIn.isCreative()) {

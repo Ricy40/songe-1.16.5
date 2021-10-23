@@ -39,6 +39,7 @@ public class WaxingCopperStairsBlock extends StairsBlock implements WaxingBlockL
                         }
                     }
                     worldIn.setBlock(pos, axeState, 11);
+                    playerIn.swing(handIn);
                 }
                 worldIn.playSound(playerIn, pos.getX(), pos.getY(), pos.getZ(), SoundInit.AXE_WAX_OFF.get(), SoundCategory.BLOCKS, 10.0f, 1.0f);
                 if (!playerIn.isCreative()) {
