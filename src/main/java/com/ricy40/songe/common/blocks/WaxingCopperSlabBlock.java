@@ -45,9 +45,10 @@ public class WaxingCopperSlabBlock extends SlabBlock implements WaxingBlockList 
                     item.damageItem(itemStack, 1, playerIn, player -> player.broadcastBreakEvent(handIn));
                 }
                 worldIn.levelEvent(playerIn, 3003, pos, 0);
+                return ActionResultType.SUCCESS;
             }
         }
 
-        return super.use(state, worldIn, pos, playerIn, handIn, rayTrace);
+        return ActionResultType.PASS;
     }
 }

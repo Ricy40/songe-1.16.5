@@ -60,6 +60,7 @@ public class WeatheringCopperFullBlock extends Block implements WeatheringCopper
                     itemStack.shrink(1);
                 }
                 worldIn.levelEvent(playerIn, 3003, pos, 0);
+                return ActionResultType.SUCCESS;
             }
         }
 
@@ -80,10 +81,11 @@ public class WeatheringCopperFullBlock extends Block implements WeatheringCopper
                 if (!playerIn.isCreative()) {
                     item.damageItem(itemStack, 1, playerIn, player -> player.broadcastBreakEvent(handIn));
                 }
+                return ActionResultType.SUCCESS;
             }
         }
 
-        return super.use(state, worldIn, pos, playerIn, handIn, rayTrace);
+        return ActionResultType.PASS;
     }
 
     public boolean isRandomlyTicking(BlockState state) {

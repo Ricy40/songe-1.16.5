@@ -46,6 +46,7 @@ public class WaxingCopperStairsBlock extends StairsBlock implements WaxingBlockL
                     item.damageItem(itemStack, 1, playerIn, player -> player.broadcastBreakEvent(handIn));
                 }
                 worldIn.levelEvent(playerIn, 3003, pos, 0);
+                return ActionResultType.SUCCESS;
             }
         }
 

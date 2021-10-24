@@ -57,6 +57,7 @@ public class WeatheringCopperStairsBlock extends StairsBlock implements Weatheri
                     itemStack.shrink(1);
                 }
                 worldIn.levelEvent(playerIn, 3003, pos, 0);
+                return ActionResultType.SUCCESS;
             }
         }
 
@@ -77,6 +78,7 @@ public class WeatheringCopperStairsBlock extends StairsBlock implements Weatheri
                 if (!playerIn.isCreative()) {
                     item.damageItem(itemStack, 1, playerIn, player -> player.broadcastBreakEvent(handIn));
                 }
+                return ActionResultType.SUCCESS;
             }
         }
 
