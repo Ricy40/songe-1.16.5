@@ -1,0 +1,8 @@
+{
+  "parent": "songe:block/vertical_slab",
+  "textures": {
+    "bottom": "songe:block/exposed_tiles",
+    "top": "songe:block/exposed_tiles",
+    "side": "songe:block/exposed_tiles"
+  }
+}

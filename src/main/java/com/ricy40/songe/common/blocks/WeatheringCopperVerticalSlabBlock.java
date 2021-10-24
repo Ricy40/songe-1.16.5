@@ -52,12 +52,14 @@ public class WeatheringCopperVerticalSlabBlock extends VerticalSlabBlock impleme
                         }
                     }
                     worldIn.setBlock(pos, newState, 11);
+                    playerIn.swing(handIn);
                 }
                 worldIn.playSound(playerIn, pos.getX(), pos.getY(), pos.getZ(), SoundInit.HONEYCOMB_WAX_ON.get(), SoundCategory.BLOCKS, 10.0f, 1.0f);
                 if (!playerIn.isCreative()) {
                     itemStack.shrink(1);
                 }
                 worldIn.levelEvent(playerIn, 3003, pos, 0);
+                return ActionResultType.SUCCESS;
             }
         }
 
@@ -72,15 +74,17 @@ public class WeatheringCopperVerticalSlabBlock extends VerticalSlabBlock impleme
                         }
                     }
                     worldIn.setBlock(pos, oldState, 11);
+                    playerIn.swing(handIn);
                 }
                 worldIn.playSound(playerIn, pos.getX(), pos.getY(), pos.getZ(), SoundInit.AXE_SCRAPE.get(), SoundCategory.BLOCKS, 10.0f, 1.0f);
                 if (!playerIn.isCreative()) {
                     item.damageItem(itemStack, 1, playerIn, player -> player.broadcastBreakEvent(handIn));
                 }
+                return ActionResultType.SUCCESS;
             }
         }
 
-        return super.use(state, worldIn, pos, playerIn, handIn, rayTrace);
+        return ActionResultType.PASS;
     }
 
     public boolean isRandomlyTicking(BlockState state) {

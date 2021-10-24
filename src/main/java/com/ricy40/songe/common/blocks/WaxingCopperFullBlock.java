@@ -39,15 +39,17 @@ public class WaxingCopperFullBlock extends Block implements WaxingBlockList {
                         }
                     }
                     worldIn.setBlock(pos, axeState, 11);
+                    playerIn.swing(handIn);
                 }
                 worldIn.playSound(playerIn, pos.getX(), pos.getY(), pos.getZ(), SoundInit.AXE_WAX_OFF.get(), SoundCategory.BLOCKS, 10.0f, 1.0f);
                 if (!playerIn.isCreative()) {
                     item.damageItem(itemStack, 1, playerIn, player -> player.broadcastBreakEvent(handIn));
                 }
                 worldIn.levelEvent(playerIn, 3003, pos, 0);
+                return ActionResultType.SUCCESS;
             }
         }
 
-        return super.use(state, worldIn, pos, playerIn, handIn, rayTrace);
+        return ActionResultType.PASS;
     }
 }

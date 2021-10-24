@@ -1,5 +1,6 @@
 package com.ricy40.songe;
 
+import com.ricy40.songe.core.init.ParticleInit;
 import com.ricy40.songe.core.init.SoundInit;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -26,6 +27,7 @@ public class Songe {
     	bus.addListener(this::setup);
 
         SoundInit.SOUNDS.register(bus);
+        ParticleInit.PARTICLES.register(bus);
         ItemInit.ITEMS.register(bus);
         BlockInit.BLOCKS.register(bus);
 
