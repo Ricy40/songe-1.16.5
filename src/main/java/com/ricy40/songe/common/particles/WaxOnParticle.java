@@ -64,5 +64,5 @@ public class WaxOnParticle extends SpriteTexturedParticle {
             waxOnParticle.pickSprite(this.spriteSet);
             return waxOnParticle;
         }
-
+    }
 }
