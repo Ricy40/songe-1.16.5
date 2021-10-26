@@ -2,9 +2,11 @@ package com.ricy40.songe.common.blocks;
 
 import java.util.Random;
 
+import com.ricy40.songe.core.init.ParticleInit;
 import com.ricy40.songe.core.init.SoundInit;
 import com.ricy40.songe.core.interfaces.WaxingBlockList;
 import com.ricy40.songe.core.interfaces.WeatheringCopper;
+import com.ricy40.songe.core.util.ParticleUtil;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
@@ -12,6 +14,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
+import net.minecraft.particles.ParticleTypes;
 import net.minecraft.state.Property;
 import net.minecraft.util.*;
 import net.minecraft.util.math.BlockPos;
@@ -53,6 +56,7 @@ public class WeatheringCopperFullBlock extends Block implements WeatheringCopper
                         }
                     }
                     worldIn.setBlock(pos, newState, 11);
+                    ParticleUtil.spawnParticlesOnFaces(worldIn, pos, ParticleTypes.G);
                     playerIn.swing(handIn);
                 }
                 worldIn.playSound(playerIn, pos.getX(), pos.getY(), pos.getZ(), SoundInit.HONEYCOMB_WAX_ON.get(), SoundCategory.BLOCKS, 10.0f, 1.0f);
