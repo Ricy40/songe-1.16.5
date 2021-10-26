@@ -1,0 +1,8 @@
+{
+  "parent": "songe:block/vertical_slab",
+  "textures": {
+    "bottom": "create:block/dark_scoria/gabbro/paved",
+    "top": "create:block/dark_scoria/gabbro/paved",
+    "side": "create:block/dark_scoria/gabbro/paved"
+  }
+}
