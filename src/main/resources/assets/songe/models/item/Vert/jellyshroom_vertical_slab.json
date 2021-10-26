@@ -1,8 +1,0 @@
-{
-  "parent": "songe:block/vertical_slab",
-  "textures": {
-    "bottom": "betterendforge:block/jellyshroom_planks",
-    "top": "betterendforge:block/jellyshroom_planks",
-    "side": "betterendforge:block/jellyshroom_planks"
-  }
-}

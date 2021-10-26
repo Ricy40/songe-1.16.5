@@ -1,8 +1,0 @@
-{
-  "parent": "songe:block/vertical_slab",
-  "textures": {
-    "bottom": "betterendforge:block/dragon_tree_planks",
-    "top": "betterendforge:block/dragon_tree_planks",
-    "side": "betterendforge:block/dragon_tree_planks"
-  }
-}

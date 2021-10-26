@@ -1,8 +1,0 @@
-{
-  "parent": "songe:block/vertical_slab",
-  "textures": {
-    "bottom": "betterendforge:block/mossy_glowshroom_planks",
-    "top": "betterendforge:block/mossy_glowshroom_planks",
-    "side": "betterendforge:block/mossy_glowshroom_planks"
-  }
-}
