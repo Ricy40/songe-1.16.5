@@ -1,0 +1,8 @@
+{
+  "parent": "songe:block/vertical_slab",
+  "textures": {
+    "bottom": "betterendforge:block/flavolite_bricks",
+    "top": "betterendforge:block/flavolite_bricks",
+    "side": "betterendforge:block/flavolite_bricks"
+  }
+}
