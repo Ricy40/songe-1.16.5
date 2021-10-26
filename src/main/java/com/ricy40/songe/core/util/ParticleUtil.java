@@ -5,6 +5,7 @@ import com.ricy40.songe.common.particles.WaxOnParticle;
 import com.ricy40.songe.core.init.ParticleInit;
 import net.minecraft.client.Minecraft;
 import net.minecraft.particles.IParticleData;
+import net.minecraft.particles.ParticleTypes;
 import net.minecraft.util.Direction;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
