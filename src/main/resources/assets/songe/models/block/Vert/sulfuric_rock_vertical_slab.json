@@ -1,0 +1,8 @@
+{
+  "parent": "songe:block/vertical_slab",
+  "textures": {
+    "bottom": "betterendforge:block/sulfuric_rock",
+    "top": "betterendforge:block/sulfuric_rock",
+    "side": "betterendforge:block/sulfuric_rock"
+  }
+}

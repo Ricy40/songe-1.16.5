@@ -13,6 +13,6 @@
       "model": "songe:block/cypress_vertical_slab", "y": 270, "uvlock": true
     },
     "type=double": {
-      "model": "byg:block/cypress" }
+      "model": "byg:block/cypress_planks" }
   }
 }

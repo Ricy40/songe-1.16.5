@@ -1,0 +1,8 @@
+{
+  "parent": "songe:block/vertical_slab",
+  "textures": {
+    "bottom": "byg:block/maple_planks",
+    "top": "byg:block/maple_planks",
+    "side": "byg:block/maple_planks"
+  }
+}
