@@ -44,8 +44,6 @@ public class WeatheringCopperFullBlock extends Block implements WeatheringCopper
         ItemStack itemStack = playerIn.getItemInHand(handIn);
         Item item = itemStack.getItem();
 
-
-
         if (WAXING_BLOCK.get().get(state.getBlock()) != null){
             BlockState newState = WAXING_BLOCK.get().get(state.getBlock()).defaultBlockState();
             if (item == Items.HONEYCOMB) {
@@ -56,7 +54,7 @@ public class WeatheringCopperFullBlock extends Block implements WeatheringCopper
                         }
                     }
                     worldIn.setBlock(pos, newState, 11);
-                    ParticleUtil.spawnParticlesOnFaces(worldIn, pos, ParticleTypes.G);
+                    ParticleUtil.spawnParticlesOnFaces(worldIn, pos, ParticleInit.WAX_ON_PARTICLE.get());
                     playerIn.swing(handIn);
                 }
                 worldIn.playSound(playerIn, pos.getX(), pos.getY(), pos.getZ(), SoundInit.HONEYCOMB_WAX_ON.get(), SoundCategory.BLOCKS, 10.0f, 1.0f);
