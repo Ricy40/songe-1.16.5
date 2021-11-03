@@ -1,8 +1,0 @@
-{
-  "parent": "songe:block/vertical_slab",
-  "textures": {
-    "bottom": "cavesandcliffs:block/deepslate_bricks",
-    "top": "cavesandcliffs:block/deepslate_bricks",
-    "side": "cavesandcliffs:block/deepslate_bricks"
-  }
-}

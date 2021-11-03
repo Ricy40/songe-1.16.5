@@ -1,8 +1,0 @@
-{
-  "parent": "songe:block/vertical_slab",
-  "textures": {
-    "bottom": "create:block/palettes/granite/fancy_bricks",
-    "top": "create:block/palettes/granite/fancy_bricks",
-    "side": "create:block/palettes/granite/fancy_bricks"
-  }
-}

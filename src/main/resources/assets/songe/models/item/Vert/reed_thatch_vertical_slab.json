@@ -1,8 +1,0 @@
-{
-  "parent": "songe:block/vertical_slab",
-  "textures": {
-    "bottom": "byg:block/reed_thatch",
-    "top": "byg:block/reed_thatch",
-    "side": "byg:block/reed_thatch"
-  }
-}

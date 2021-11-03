@@ -1,8 +1,0 @@
-{
-  "parent": "songe:block/vertical_slab",
-  "textures": {
-    "bottom": "create:block/palettes/andesite/cobblestone",
-    "top": "create:block/palettes/andesite/cobblestone",
-    "side": "create:block/palettes/andesite/cobblestone"
-  }
-}

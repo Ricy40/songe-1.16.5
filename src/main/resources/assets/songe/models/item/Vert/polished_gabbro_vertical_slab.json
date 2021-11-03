@@ -1,8 +1,0 @@
-{
-  "parent": "songe:block/vertical_slab",
-  "textures": {
-    "bottom": "create:block/palettes/gabbro/polished",
-    "top": "create:block/palettes/gabbro/polished",
-    "side": "create:block/palettes/gabbro/polished"
-  }
-}

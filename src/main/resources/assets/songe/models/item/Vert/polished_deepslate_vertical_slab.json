@@ -1,8 +1,0 @@
-{
-  "parent": "songe:block/vertical_slab",
-  "textures": {
-    "bottom": "cavesandcliffs:block/polished_deepslate",
-    "top": "cavesandcliffs:block/polished_deepslate",
-    "side": "cavesandcliffs:block/polished_deepslate"
-  }
-}
