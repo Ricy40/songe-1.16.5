@@ -147,6 +147,16 @@ public class BlockInit {
 	public static final RegistryObject<Block> WAXED_WEATHERED_COPPER_SHINGLES_VERTICAL_SLAB = registerBlock("waxed_weathered_copper_shingles_vertical_slab", () -> new WaxingCopperVerticalSlabBlock(AbstractBlock.Properties.of(Material.METAL, MaterialColor.COLOR_ORANGE).requiresCorrectToolForDrops().strength(3.0F, 6.0F).sound(SoundInit.COPPER)));
 	public static final RegistryObject<Block> WAXED_OXIDIZED_COPPER_SHINGLES_VERTICAL_SLAB = registerBlock("waxed_oxidized_copper_shingles_vertical_slab", () -> new WaxingCopperVerticalSlabBlock(AbstractBlock.Properties.of(Material.METAL, MaterialColor.COLOR_ORANGE).requiresCorrectToolForDrops().strength(3.0F, 6.0F).sound(SoundInit.COPPER)));
 
+	//Vertical Slabs
+
+	public static final RegistryObject<Block> ANDESITE_COBBLESTONE_VERTICAL_SLAB = registerBlock("andesite_cobblestone_vertical_slab",
+			() -> new Block(AbstractBlock
+					.Properties.of(Material.STONE, MaterialColor.STONE)
+					.strength(6.0f, 1.5f)
+					.harvestTool(ToolType.PICKAXE)
+					.requiresCorrectToolForDrops()
+					.harvestLevel(1)
+					.sound(SoundType.STONE)));
 
 	//Register Method
 
