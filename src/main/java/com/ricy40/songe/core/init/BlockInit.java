@@ -149,14 +149,8 @@ public class BlockInit {
 
 	//Vertical Slabs
 
-	public static final RegistryObject<Block> ANDESITE_COBBLESTONE_VERTICAL_SLAB = registerBlock("andesite_cobblestone_vertical_slab",
-			() -> new Block(AbstractBlock
-					.Properties.of(Material.STONE, MaterialColor.STONE)
-					.strength(6.0f, 1.5f)
-					.harvestTool(ToolType.PICKAXE)
-					.requiresCorrectToolForDrops()
-					.harvestLevel(1)
-					.sound(SoundType.STONE)));
+	public static final RegistryObject<Block> ANDESITE_COBBLESTONE_VERTICAL_SLAB = registerBlock("andesite_cobblestone_vertical_slab", () -> new Block(AbstractBlock.Properties.of(Material.STONE, MaterialColor.STONE).strength(6.0f, 1.5f).harvestTool(ToolType.PICKAXE).requiresCorrectToolForDrops().harvestLevel(1).sound(SoundType.STONE)));
+	public static final RegistryObject<Block> DIORITE_COBBLESTONE_VERTICAL_SLAB = registerBlock("diorite_cobblestone_vertical_slab", () -> new Block(AbstractBlock.Properties.of(Material.STONE, MaterialColor.STONE).strength(6.0f, 1.5f).harvestTool(ToolType.PICKAXE).requiresCorrectToolForDrops().harvestLevel(1).sound(SoundType.STONE)));
 
 	//Register Method
 
