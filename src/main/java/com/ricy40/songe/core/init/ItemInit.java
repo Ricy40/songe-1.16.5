@@ -38,5 +38,5 @@ public class ItemInit {
 	public static final  RegistryObject<Item> RAW_THALLASIUM = ITEMS.register("raw_thallasium", () -> new Item(new Item.Properties().tab(Songe.SONGE_GROUP)));
 	public static final  RegistryObject<Item> RAW_ZINC = ITEMS.register("raw_zinc", () -> new Item(new Item.Properties().tab(Songe.SONGE_GROUP)));
 
-}z
+}
 	
