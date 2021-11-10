@@ -4,6 +4,7 @@ import com.ricy40.songe.Songe;
 import com.ricy40.songe.common.particles.WaxOnParticle;
 import com.ricy40.songe.core.init.ParticleInit;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.particle.Particle;
 import net.minecraft.particles.IParticleData;
 import net.minecraft.particles.ParticleTypes;
 import net.minecraft.util.Direction;
@@ -39,6 +40,7 @@ public class ParticleUtil {
                 double d2 = direction$axis == Direction.Axis.Y ? 0.5D + 0.5625D * (double)direction.getStepY() : (double)random.nextFloat();
                 double d3 = direction$axis == Direction.Axis.Z ? 0.5D + 0.5625D * (double)direction.getStepZ() : (double)random.nextFloat();
                 worldIn.addParticle(particle, (double)pos.getX() + d1, (double)pos.getY() + d2, (double)pos.getZ() + d3, 0.0D, 0.0D, 0.0D);
+                System.out.println("Tried to spawn particle");
             }
         }
 
