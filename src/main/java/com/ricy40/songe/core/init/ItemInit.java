@@ -31,5 +31,12 @@ public class ItemInit {
 	public static final RegistryObject<Item> SONGE_CHESTPLATE = ITEMS.register("songe_chestplate", () -> new ArmorItem(ModArmorMaterial.SONGE, EquipmentSlotType.CHEST, new Item.Properties().tab(Songe.SONGE_GROUP).rarity(Rarity.RARE)));
 	public static final RegistryObject<Item> SONGE_LEGGINGS = ITEMS.register("songe_leggings", () -> new ArmorItem(ModArmorMaterial.SONGE, EquipmentSlotType.LEGS, new Item.Properties().tab(Songe.SONGE_GROUP).rarity(Rarity.RARE)));
 	public static final RegistryObject<Item> SONGE_BOOT	= ITEMS.register("songe_boots", () -> new ArmorItem(ModArmorMaterial.SONGE, EquipmentSlotType.FEET, new Item.Properties().tab(Songe.SONGE_GROUP).rarity(Rarity.RARE)));
-}
+
+	//Raw Stuff
+
+	public static final  RegistryObject<Item> RAW_SILVER = ITEMS.register("raw_silver", () -> new Item(new Item.Properties().tab(Songe.SONGE_GROUP)));
+	public static final  RegistryObject<Item> RAW_THALLASIUM = ITEMS.register("raw_thallasium", () -> new Item(new Item.Properties().tab(Songe.SONGE_GROUP)));
+	public static final  RegistryObject<Item> RAW_ZINC = ITEMS.register("raw_zinc", () -> new Item(new Item.Properties().tab(Songe.SONGE_GROUP)));
+
+}z
 	

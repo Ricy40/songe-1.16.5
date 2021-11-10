@@ -147,6 +147,12 @@ public class BlockInit {
 	public static final RegistryObject<Block> WAXED_WEATHERED_COPPER_SHINGLES_VERTICAL_SLAB = registerBlock("waxed_weathered_copper_shingles_vertical_slab", () -> new WaxingCopperVerticalSlabBlock(AbstractBlock.Properties.of(Material.METAL, MaterialColor.COLOR_ORANGE).requiresCorrectToolForDrops().strength(3.0F, 6.0F).sound(SoundInit.COPPER)));
 	public static final RegistryObject<Block> WAXED_OXIDIZED_COPPER_SHINGLES_VERTICAL_SLAB = registerBlock("waxed_oxidized_copper_shingles_vertical_slab", () -> new WaxingCopperVerticalSlabBlock(AbstractBlock.Properties.of(Material.METAL, MaterialColor.COLOR_ORANGE).requiresCorrectToolForDrops().strength(3.0F, 6.0F).sound(SoundInit.COPPER)));
 
+	//Raw Stuff
+
+	public static final RegistryObject<Block> RAW_SILVER_BLOCK = registerBlock("raw_silver_block", () -> new Block(AbstractBlock.Properties.of(Material.STONE, MaterialColor.STONE).strength(5f, 6f).harvestTool(ToolType.PICKAXE).harvestLevel(1).harvestTool(ToolType.PICKAXE)));
+	public static final RegistryObject<Block> RAW_THALLASIUM_BLOCK = registerBlock("raw_thallasium_block", () -> new Block(AbstractBlock.Properties.of(Material.STONE, MaterialColor.STONE).strength(5f, 6f).harvestTool(ToolType.PICKAXE).harvestLevel(1).harvestTool(ToolType.PICKAXE)));
+	public static final RegistryObject<Block> RAW_ZINC_BLOCK = registerBlock("raw_zinc_block", () -> new Block(AbstractBlock.Properties.of(Material.STONE, MaterialColor.STONE).strength(5f, 6f).harvestTool(ToolType.PICKAXE).harvestLevel(1).harvestTool(ToolType.PICKAXE)));
+
 	//Vertical Slabs
 
 	public static final RegistryObject<Block> ANDESITE_COBBLESTONE_VERTICAL_SLAB = registerBlock("andesite_cobblestone_vertical_slab", () -> new Block(AbstractBlock.Properties.of(Material.STONE, MaterialColor.STONE).strength(6.0f, 1.5f).harvestTool(ToolType.PICKAXE).requiresCorrectToolForDrops().harvestLevel(1).sound(SoundType.STONE)));

@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "all": "songe:block/raw_zinc_block"
+  }
+}

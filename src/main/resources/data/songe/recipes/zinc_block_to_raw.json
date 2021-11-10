@@ -1,0 +1,16 @@
+{
+  "group": "songe",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0"
+  ],
+  "key": {
+    "0": {
+      "item": "songe:raw_zinc_block"
+    }
+  },
+  "result": {
+    "item": "songe:raw_zinc",
+    "count": 9
+  }
+}

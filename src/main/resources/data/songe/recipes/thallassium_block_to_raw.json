@@ -1,0 +1,16 @@
+{
+  "group": "songe",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0"
+  ],
+  "key": {
+    "0": {
+      "item": "songe:raw_thallasium_block"
+    }
+  },
+  "result": {
+    "item": "songe:raw_thallasium",
+    "count": 9
+  }
+}

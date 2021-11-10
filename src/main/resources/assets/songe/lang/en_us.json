@@ -11,6 +11,10 @@
 	"item.songe.songe_leggings" : "Songe Leggings",
 	"item.songe.songe_boots" : "Songe Boots",
 
+	"item.songe.raw_thallasium" : "Raw Thallasium",
+	"item.songe.raw_silver" : "Raw Silver",
+	"item.songe.raw_zinc" : "Raw Zinc",
+
 	"block.songe.songe_block" : "Block of Songe",
 	"block.songe.songe_stairs" : "Songe Stairs",
 	"block.songe.songe_fence" : "Songe Fence",
@@ -121,6 +125,10 @@
 	"block.songe.waxed_exposed_copper_shingles_vertical_slab" : "Waxed Exposed Copper Shingles Vertical Slab",
 	"block.songe.waxed_weathered_copper_shingles_vertical_slab" : "Waxed Weathered Copper Shingles Vertical Slab",
 	"block.songe.waxed_oxidized_copper_shingles_vertical_slab" : "Waxed Oxidized Copper Shingles Vertical Slab",
+
+	"block.songe.raw_thallasium_block" : "Raw Thallasium Block",
+	"block.songe.raw_silver_block" : "Raw Silver Block",
+	"block.songe.raw_zinc_block" : "Raw Zinc Block",
 
 	"block.songe.cypress_vertical_slab" : "Cypress Vertical Slab",
 	"block.songe.zelkova_vertical_slab" : "Zelkova Vertical Slab",
