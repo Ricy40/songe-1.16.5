@@ -42,9 +42,123 @@ public class SongeLootTableProvider extends LootTableProvider
         @Override
         protected void addTables() {
 
+            add(BlockInit.SONGE_BLOCK.get(), createOreDrop(BlockInit.SONGE_BLOCK.get(), ItemInit.SONGE.get()));
+            dropSelf(BlockInit.SONGE_SLAB.get());
+            dropSelf(BlockInit.SONGE_STAIRS.get());
+            dropSelf(BlockInit.SONGE_FENCE.get());
+            dropSelf(BlockInit.SONGE_FENCE_GATE.get());
+            dropSelf(BlockInit.SONGE_VERTICAL_SLAB.get());
+            dropSelf(BlockInit.SONGE_BUTTON.get());
+            dropSelf(BlockInit.SONGE_PRESSURE_PLATE.get());
+
+            dropSelf(BlockInit.COPPER_BLOCK.get());
+            dropSelf(BlockInit.COPPER_SLAB.get());
+            dropSelf(BlockInit.COPPER_STAIRS.get());
+            dropSelf(BlockInit.COPPER_VERTICAL_SLAB.get());
+            dropSelf(BlockInit.EXPOSED_COPPER.get());
+            dropSelf(BlockInit.EXPOSED_COPPER_SLAB.get());
+            dropSelf(BlockInit.EXPOSED_COPPER_STAIRS.get());
+            dropSelf(BlockInit.EXPOSED_COPPER_VERTICAL_SLAB.get());
+            dropSelf(BlockInit.WEATHERED_COPPER.get());
+            dropSelf(BlockInit.WEATHERED_COPPER_SLAB.get());
+            dropSelf(BlockInit.WEATHERED_COPPER_STAIRS.get());
+            dropSelf(BlockInit.WEATHERED_COPPER_VERTICAL_SLAB.get());
+            dropSelf(BlockInit.OXIDIZED_COPPER.get());
+            dropSelf(BlockInit.OXIDIZED_COPPER_SLAB.get());
+            dropSelf(BlockInit.OXIDIZED_COPPER_STAIRS.get());
+            dropSelf(BlockInit.OXIDIZED_COPPER_VERTICAL_SLAB.get());
+
+            dropSelf(BlockInit.WAXED_COPPER_BLOCK.get());
+            dropSelf(BlockInit.WAXED_COPPER_SLAB.get());
+            dropSelf(BlockInit.WAXED_COPPER_STAIRS.get());
+            dropSelf(BlockInit.WAXED_COPPER_VERTICAL_SLAB.get());
+            dropSelf(BlockInit.WAXED_EXPOSED_COPPER.get());
+            dropSelf(BlockInit.WAXED_EXPOSED_COPPER_SLAB.get());
+            dropSelf(BlockInit.WAXED_EXPOSED_COPPER_STAIRS.get());
+            dropSelf(BlockInit.WAXED_EXPOSED_COPPER_VERTICAL_SLAB.get());
+            dropSelf(BlockInit.WAXED_WEATHERED_COPPER.get());
+            dropSelf(BlockInit.WAXED_WEATHERED_COPPER_SLAB.get());
+            dropSelf(BlockInit.WAXED_WEATHERED_COPPER_STAIRS.get());
+            dropSelf(BlockInit.WAXED_WEATHERED_COPPER_VERTICAL_SLAB.get());
+            dropSelf(BlockInit.WAXED_OXIDIZED_COPPER.get());
+            dropSelf(BlockInit.WAXED_OXIDIZED_COPPER_SLAB.get());
+            dropSelf(BlockInit.WAXED_OXIDIZED_COPPER_STAIRS.get());
+            dropSelf(BlockInit.WAXED_OXIDIZED_COPPER_VERTICAL_SLAB.get());
+
+            dropSelf(BlockInit.COPPER_SHINGLES.get());
+            dropSelf(BlockInit.COPPER_SHINGLES_SLAB.get());
+            dropSelf(BlockInit.COPPER_SHINGLES_STAIRS.get());
+            dropSelf(BlockInit.COPPER_SHINGLES_VERTICAL_SLAB.get());
+            dropSelf(BlockInit.EXPOSED_COPPER_SHINGLES.get());
+            dropSelf(BlockInit.EXPOSED_COPPER_SHINGLES_SLAB.get());
+            dropSelf(BlockInit.EXPOSED_COPPER_SHINGLES_STAIRS.get());
+            dropSelf(BlockInit.EXPOSED_COPPER_SHINGLES_VERTICAL_SLAB.get());
+            dropSelf(BlockInit.WEATHERED_COPPER_SHINGLES.get());
+            dropSelf(BlockInit.WEATHERED_COPPER_SHINGLES_SLAB.get());
+            dropSelf(BlockInit.WEATHERED_COPPER_SHINGLES_STAIRS.get());
+            dropSelf(BlockInit.WEATHERED_COPPER_SHINGLES_VERTICAL_SLAB.get());
+            dropSelf(BlockInit.OXIDIZED_COPPER_SHINGLES.get());
+            dropSelf(BlockInit.OXIDIZED_COPPER_SHINGLES_SLAB.get());
+            dropSelf(BlockInit.OXIDIZED_COPPER_SHINGLES_STAIRS.get());
+            dropSelf(BlockInit.OXIDIZED_COPPER_SHINGLES_VERTICAL_SLAB.get());
+
+            dropSelf(BlockInit.WAXED_COPPER_SHINGLES.get());
+            dropSelf(BlockInit.WAXED_COPPER_SHINGLES_SLAB.get());
+            dropSelf(BlockInit.WAXED_COPPER_SHINGLES_STAIRS.get());
+            dropSelf(BlockInit.WAXED_COPPER_SHINGLES_VERTICAL_SLAB.get());
+            dropSelf(BlockInit.WAXED_EXPOSED_COPPER_SHINGLES.get());
+            dropSelf(BlockInit.WAXED_EXPOSED_COPPER_SHINGLES_SLAB.get());
+            dropSelf(BlockInit.WAXED_EXPOSED_COPPER_SHINGLES_STAIRS.get());
+            dropSelf(BlockInit.WAXED_EXPOSED_COPPER_SHINGLES_VERTICAL_SLAB.get());
+            dropSelf(BlockInit.WAXED_WEATHERED_COPPER_SHINGLES.get());
+            dropSelf(BlockInit.WAXED_WEATHERED_COPPER_SHINGLES_SLAB.get());
+            dropSelf(BlockInit.WAXED_WEATHERED_COPPER_SHINGLES_STAIRS.get());
+            dropSelf(BlockInit.WAXED_WEATHERED_COPPER_SHINGLES_VERTICAL_SLAB.get());
+            dropSelf(BlockInit.WAXED_OXIDIZED_COPPER_SHINGLES.get());
+            dropSelf(BlockInit.WAXED_OXIDIZED_COPPER_SHINGLES_SLAB.get());
+            dropSelf(BlockInit.WAXED_OXIDIZED_COPPER_SHINGLES_STAIRS.get());
+            dropSelf(BlockInit.WAXED_OXIDIZED_COPPER_SHINGLES_VERTICAL_SLAB.get());
+
+            dropSelf(BlockInit.COPPER_TILES.get());
+            dropSelf(BlockInit.COPPER_TILES_SLAB.get());
+            dropSelf(BlockInit.COPPER_TILES_STAIRS.get());
+            dropSelf(BlockInit.COPPER_TILES_VERTICAL_SLAB.get());
+            dropSelf(BlockInit.EXPOSED_COPPER_TILES.get());
+            dropSelf(BlockInit.EXPOSED_COPPER_TILES_SLAB.get());
+            dropSelf(BlockInit.EXPOSED_COPPER_TILES_STAIRS.get());
+            dropSelf(BlockInit.EXPOSED_COPPER_TILES_VERTICAL_SLAB.get());
+            dropSelf(BlockInit.WEATHERED_COPPER_TILES.get());
+            dropSelf(BlockInit.WEATHERED_COPPER_TILES_SLAB.get());
+            dropSelf(BlockInit.WEATHERED_COPPER_TILES_STAIRS.get());
+            dropSelf(BlockInit.WEATHERED_COPPER_TILES_VERTICAL_SLAB.get());
+            dropSelf(BlockInit.OXIDIZED_COPPER_TILES.get());
+            dropSelf(BlockInit.OXIDIZED_COPPER_TILES_SLAB.get());
+            dropSelf(BlockInit.OXIDIZED_COPPER_TILES_STAIRS.get());
+            dropSelf(BlockInit.OXIDIZED_COPPER_TILES_VERTICAL_SLAB.get());
+
+            dropSelf(BlockInit.WAXED_COPPER_TILES.get());
+            dropSelf(BlockInit.WAXED_COPPER_TILES_SLAB.get());
+            dropSelf(BlockInit.WAXED_COPPER_TILES_STAIRS.get());
+            dropSelf(BlockInit.WAXED_COPPER_TILES_VERTICAL_SLAB.get());
+            dropSelf(BlockInit.WAXED_EXPOSED_COPPER_TILES.get());
+            dropSelf(BlockInit.WAXED_EXPOSED_COPPER_TILES_SLAB.get());
+            dropSelf(BlockInit.WAXED_EXPOSED_COPPER_TILES_STAIRS.get());
+            dropSelf(BlockInit.WAXED_EXPOSED_COPPER_TILES_VERTICAL_SLAB.get());
+            dropSelf(BlockInit.WAXED_WEATHERED_COPPER_TILES.get());
+            dropSelf(BlockInit.WAXED_WEATHERED_COPPER_TILES_SLAB.get());
+            dropSelf(BlockInit.WAXED_WEATHERED_COPPER_TILES_STAIRS.get());
+            dropSelf(BlockInit.WAXED_WEATHERED_COPPER_TILES_VERTICAL_SLAB.get());
+            dropSelf(BlockInit.WAXED_OXIDIZED_COPPER_TILES.get());
+            dropSelf(BlockInit.WAXED_OXIDIZED_COPPER_TILES_SLAB.get());
+            dropSelf(BlockInit.WAXED_OXIDIZED_COPPER_TILES_STAIRS.get());
+            dropSelf(BlockInit.WAXED_OXIDIZED_COPPER_TILES_VERTICAL_SLAB.get());
+
+            dropSelf(BlockInit.RAW_SILVER_BLOCK.get());
+            dropSelf(BlockInit.RAW_THALLASIUM_BLOCK.get());
+            dropSelf(BlockInit.RAW_ZINC_BLOCK.get());
+
             dropSelf(BlockInit.ANDESITE_COBBLESTONE_VERTICAL_SLAB.get());
             dropSelf(BlockInit.DIORITE_COBBLESTONE_VERTICAL_SLAB.get());
-            add(BlockInit.SONGE_BLOCK.get(), createOreDrop(BlockInit.SONGE_BLOCK.get(), ItemInit.SONGE.get()));
 
         }
 

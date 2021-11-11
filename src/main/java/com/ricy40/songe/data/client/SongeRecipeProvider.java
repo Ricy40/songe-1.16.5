@@ -4,7 +4,6 @@ import com.ricy40.songe.Songe;
 import com.ricy40.songe.core.init.BlockInit;
 import com.ricy40.songe.core.init.ItemInit;
 import net.minecraft.data.*;
-import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.util.ResourceLocation;
 
 import java.util.function.Consumer;
@@ -40,7 +39,7 @@ public class SongeRecipeProvider extends RecipeProvider {
         //        .save(consumer, modId("example_smelting"));
     }
 
-    private ResourceLocation modid(String path) {
+    private ResourceLocation modId(String path) {
         return new ResourceLocation(Songe.MOD_ID, path);
     }
 }
