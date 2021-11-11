@@ -2,6 +2,7 @@ package com.ricy40.songe.data;
 
 import com.ricy40.songe.Songe;
 import com.ricy40.songe.data.client.SongeBlockStateProvider;
+import com.ricy40.songe.data.client.SongeLootTableProvider;
 import com.ricy40.songe.data.client.SongeModelProvider;
 import com.ricy40.songe.data.client.SongeRecipeProvider;
 import net.minecraft.data.DataGenerator;
@@ -21,9 +22,9 @@ public final class DataGenerators {
 
         gen.addProvider(new SongeBlockStateProvider(gen, existingFileHelper));
         gen.addProvider(new SongeModelProvider(gen, existingFileHelper));
-        gen.addProvider(new SongeModelProvider(gen, existingFileHelper));
-        gen.addProvider(new SongeRecipeProvider((gen, existingFileHelper));
 
+        gen.addProvider(new SongeLootTableProvider(gen));
+        gen.addProvider(new SongeRecipeProvider(gen));
 
     }
 }
