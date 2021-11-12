@@ -1,8 +1,0 @@
-{
-  "parent": "songe:block/vertical_slab",
-  "textures": {
-    "bottom": "betternether:block/soul_sandstone",
-    "top": "betternether:block/soul_sandstone",
-    "side": "betternether:block/soul_sandstone"
-  }
-}

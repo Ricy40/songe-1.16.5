@@ -13,6 +13,6 @@
       "model": "songe:block/sulfuric_rock_bricks_vertical_slab", "y": 270, "uvlock": true
     },
     "type=double": {
-        "model": "betterendforge:block/sulfuric_rock_bricks" }
+        "model": "betterendforge:block/sulphuric_rock_bricks" }
   }
 }

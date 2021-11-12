@@ -13,6 +13,6 @@
       "model": "songe:block/roof_tile_nether_bricks_vertical_slab", "y": 270, "uvlock": true
     },
     "type=double": {
-      "model": "betternether:block/roof_tile_nether_bricks_planks" }
+      "model": "betternether:block/roof_tile_nether_bricks" }
   }
 }

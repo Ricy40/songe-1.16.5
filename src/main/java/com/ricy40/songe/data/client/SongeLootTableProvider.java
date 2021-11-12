@@ -234,16 +234,13 @@ public class SongeLootTableProvider extends LootTableProvider
             dropSelf(BlockInit.SCORIA_BRICKS_VERTICAL_SLAB.get());
             dropSelf(BlockInit.SCORIA_COBBLESTONE_VERTICAL_SLAB.get());
             dropSelf(BlockInit.SKYRIS_VERTICAL_SLAB.get());
-            dropSelf(BlockInit.SOUL_SANDSTONE_CUT_VERTICAL_SLAB.get());
-            dropSelf(BlockInit.SOUL_SANDSTONE_SMOOTH_VERTICAL_SLAB.get());
-            dropSelf(BlockInit.SOUL_SANDSTONE_VERTICAL_SLAB.get());
             dropSelf(BlockInit.STALAGNATE_PLANKS_VERTICAL_SLAB.get());
             dropSelf(BlockInit.SULFURIC_ROCK_BRICKS_VERTICAL_SLAB.get());
             dropSelf(BlockInit.SULFURIC_ROCK_VERTICAL_SLAB.get());
             dropSelf(BlockInit.TENANEA_VERTICAL_SLAB.get());
             dropSelf(BlockInit.TERMINITE_VERTICAL_SLAB.get());
             dropSelf(BlockInit.THALLASIUM_VERTICAL_SLAB.get());
-            dropSelf(BlockInit.UMBRELLA_VERTICAL_SLAB.get());
+            dropSelf(BlockInit.UMBRELLA_TREE_VERTICAL_SLAB.get());
             dropSelf(BlockInit.VIOLECITE_BRICKS_VERTICAL_SLAB.get());
             dropSelf(BlockInit.VIOLECITE_VERTICAL_SLAB.get());
             dropSelf(BlockInit.WART_VERTICAL_SLAB.get());
