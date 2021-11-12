@@ -43,26 +43,27 @@ public class SongeLootTableProvider extends LootTableProvider
         protected void addTables() {
 
             add(BlockInit.SONGE_BLOCK.get(), createOreDrop(BlockInit.SONGE_BLOCK.get(), ItemInit.SONGE.get()));
-            dropSelf(BlockInit.SONGE_SLAB.get());
+
+            add(BlockInit.SONGE_SLAB.get(), createSlabItemTable(BlockInit.SONGE_SLAB.get()));
             dropSelf(BlockInit.SONGE_STAIRS.get());
             dropSelf(BlockInit.SONGE_FENCE.get());
             dropSelf(BlockInit.SONGE_FENCE_GATE.get());
-            dropSelf(BlockInit.SONGE_VERTICAL_SLAB.get());
+            add(BlockInit.SONGE_VERTICAL_SLAB.get(), createSlabItemTable(BlockInit.SONGE_VERTICAL_SLAB.get()));
             dropSelf(BlockInit.SONGE_BUTTON.get());
             dropSelf(BlockInit.SONGE_PRESSURE_PLATE.get());
 
             //Copper
 
             dropSelf(BlockInit.COPPER_BLOCK.get());
-            dropSelf(BlockInit.COPPER_SLAB.get());
+            add(BlockInit.COPPER_SLAB.get(), createSlabItemTable(BlockInit.COPPER_SLAB.get()));
             dropSelf(BlockInit.COPPER_STAIRS.get());
-            dropSelf(BlockInit.COPPER_VERTICAL_SLAB.get());
+            add(BlockInit.COPPER_VERTICAL_SLAB.get(), createSlabItemTable(BlockInit.COPPER_VERTICAL_SLAB.get()));
             dropSelf(BlockInit.EXPOSED_COPPER.get());
-            dropSelf(BlockInit.EXPOSED_COPPER_SLAB.get());
+            add(BlockInit.EXPOSED_COPPER_SLAB.get(), createSlabItemTable(BlockInit.EXPOSED_COPPER_SLAB.get()));
             dropSelf(BlockInit.EXPOSED_COPPER_STAIRS.get());
-            dropSelf(BlockInit.EXPOSED_COPPER_VERTICAL_SLAB.get());
+            add(BlockInit.EXPOSED_COPPER_VERTICAL_SLAB.get(), createSlabItemTable(BlockInit.EXPOSED_COPPER_VERTICAL_SLAB.get()));
             dropSelf(BlockInit.WEATHERED_COPPER.get());
-            dropSelf(BlockInit.WEATHERED_COPPER_SLAB.get());
+            add(BlockInit.WEATHERED_COPPER_SLAB.get(), createSlabItemTable(BlockInit.WEATHERED_COPPER_SLAB.get()));
             dropSelf(BlockInit.WEATHERED_COPPER_STAIRS.get());
             dropSelf(BlockInit.WEATHERED_COPPER_VERTICAL_SLAB.get());
             dropSelf(BlockInit.OXIDIZED_COPPER.get());
