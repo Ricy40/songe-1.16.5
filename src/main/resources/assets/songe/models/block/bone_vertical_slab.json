@@ -1,8 +1,8 @@
 {
   "parent": "songe:block/vertical_slab",
   "textures": {
-    "bottom": "betternether:block/bone_tile_top",
-    "top": "betternether:block/bone_tile_top",
-    "side": "betternether:block/bone_tile_top"
+    "bottom": "betternether:block/bone_slab_top",
+    "top": "betternether:block/bone_slab_top",
+    "side": "betternether:block/bone_slab_top"
   }
 }
