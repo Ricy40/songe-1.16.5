@@ -14,9 +14,4 @@ public class ParticleInit {
     public static final RegistryObject<BasicParticleType> WAX_OFF_PARTICLE = PARTICLES.register("wax_off_particle", () -> new BasicParticleType(true));
     public static final RegistryObject<BasicParticleType> SCRAPE_PARTICLE = PARTICLES.register("scrape_particle", () -> new BasicParticleType(true));
 
-
-
-    //WAX_ON
-    //WAX_OFF
-    //SCRAPE
 }

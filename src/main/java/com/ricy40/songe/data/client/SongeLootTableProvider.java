@@ -106,9 +106,9 @@ public class SongeLootTableProvider extends LootTableProvider
             add(BlockInit.OXIDIZED_COPPER_SHINGLES_VERTICAL_SLAB.get(), createSlabItemTable(BlockInit.OXIDIZED_COPPER_SHINGLES_VERTICAL_SLAB.get()));
 
             dropSelf(BlockInit.WAXED_COPPER_SHINGLES.get());
-            dropSelf(BlockInit.WAXED_COPPER_SHINGLES_SLAB.get()); add(BlockInit.COPPER_TILES_SLAB.get(), createSlabItemTable(BlockInit.COPPER_TILES_SLAB.get()));
+            add(BlockInit.WAXED_COPPER_SHINGLES_SLAB.get(), createSlabItemTable(BlockInit.WAXED_COPPER_SHINGLES_SLAB.get()));
             dropSelf(BlockInit.WAXED_COPPER_SHINGLES_STAIRS.get());
-            dropSelf(BlockInit.WAXED_COPPER_SHINGLES_VERTICAL_SLAB.get()); add(BlockInit.COPPER_TILES_SLAB.get(), createSlabItemTable(BlockInit.COPPER_TILES_SLAB.get()));
+            add(BlockInit.WAXED_COPPER_SHINGLES_VERTICAL_SLAB.get(), createSlabItemTable(BlockInit.WAXED_COPPER_SHINGLES_VERTICAL_SLAB.get()));
             dropSelf(BlockInit.WAXED_EXPOSED_COPPER_SHINGLES.get());
             dropSelf(BlockInit.WAXED_EXPOSED_COPPER_SHINGLES_SLAB.get()); add(BlockInit.COPPER_TILES_SLAB.get(), createSlabItemTable(BlockInit.COPPER_TILES_SLAB.get()));
             dropSelf(BlockInit.WAXED_EXPOSED_COPPER_SHINGLES_STAIRS.get());

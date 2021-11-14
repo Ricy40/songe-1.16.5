@@ -20,12 +20,11 @@ public class ScrapeParticle extends SpriteTexturedParticle {
         this.bCol = f;
 
         this.setSize(0.02f, 0.02f);
-        this.quadSize *= this.random.nextFloat() * 1.1f;
+        this.quadSize *= 0.75F;
         this.xd *= (double)0.02f;
         this.yd *= (double)0.02f;
         this.zd *= (double)0.02f;
         this.lifetime = (worldIn.random.nextInt(30) + 10);
-        //this.lifetime = (int)(20.0D / (Math.random() * 1.0D));
     }
 
     @Override

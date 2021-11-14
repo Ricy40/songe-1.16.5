@@ -35,14 +35,16 @@ public class ParticleUtil {
     public static void spawnParticlesOnFaces(World worldIn, BlockPos pos, IParticleData particle) {
         Random random = worldIn.random;
 
-        for(Direction direction : Direction.values()) {
-            BlockPos blockpos = pos.relative(direction);
-            if (!worldIn.getBlockState(blockpos).isSolidRender(worldIn, blockpos)) {
-                Direction.Axis direction$axis = direction.getAxis();
-                double d1 = direction$axis == Direction.Axis.X ? 0.5D + 0.5625D * (double)direction.getStepX() : (double)random.nextFloat();
-                double d2 = direction$axis == Direction.Axis.Y ? 0.5D + 0.5625D * (double)direction.getStepY() : (double)random.nextFloat();
-                double d3 = direction$axis == Direction.Axis.Z ? 0.5D + 0.5625D * (double)direction.getStepZ() : (double)random.nextFloat();
-                worldIn.addParticle(particle, (double)pos.getX() + d1, (double)pos.getY() + d2, (double)pos.getZ() + d3, 0.0D, 0.0D, 0.0D);
+        for (int i = 0 ; i < 2 ; i++) {
+            for(Direction direction : Direction.values()) {
+                BlockPos blockpos = pos.relative(direction);
+                if (!worldIn.getBlockState(blockpos).isSolidRender(worldIn, blockpos)) {
+                    Direction.Axis direction$axis = direction.getAxis();
+                    double d1 = direction$axis == Direction.Axis.X ? 0.5D + 0.5625D * (double)direction.getStepX() : (double)random.nextFloat();
+                    double d2 = direction$axis == Direction.Axis.Y ? 0.5D + 0.5625D * (double)direction.getStepY() : (double)random.nextFloat();
+                    double d3 = direction$axis == Direction.Axis.Z ? 0.5D + 0.5625D * (double)direction.getStepZ() : (double)random.nextFloat();
+                    worldIn.addParticle(particle, (double)pos.getX() + d1, (double)pos.getY() + d2, (double)pos.getZ() + d3, 0.0D, 0.0D, 0.0D);
+                }
             }
         }
     }
