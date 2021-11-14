@@ -1,6 +1,8 @@
 package com.ricy40.songe.core.util;
 
 import com.ricy40.songe.Songe;
+import com.ricy40.songe.common.particles.ScrapeParticle;
+import com.ricy40.songe.common.particles.WaxOffParticle;
 import com.ricy40.songe.common.particles.WaxOnParticle;
 import com.ricy40.songe.core.init.ParticleInit;
 import net.minecraft.client.Minecraft;
@@ -24,12 +26,13 @@ public class ParticleUtil {
 
     @SubscribeEvent(priority = EventPriority.LOWEST)
     public static void registerParticles(ParticleFactoryRegisterEvent event) {
-        Minecraft.getInstance().particleEngine.register(ParticleInit.WAX_ON_PARTICLE.get(), WaxOnParticle.Factory::new );
+        Minecraft.getInstance().particleEngine.register(ParticleInit.WAX_ON_PARTICLE.get(), WaxOnParticle.Factory::new);
+        Minecraft.getInstance().particleEngine.register(ParticleInit.WAX_OFF_PARTICLE.get(), WaxOffParticle.Factory::new);
+        Minecraft.getInstance().particleEngine.register(ParticleInit.SCRAPE_PARTICLE.get(), ScrapeParticle.Factory::new);
     }
 
     @OnlyIn(Dist.CLIENT)
     public static void spawnParticlesOnFaces(World worldIn, BlockPos pos, IParticleData particle) {
-        double d0 = 0.5625D;
         Random random = worldIn.random;
 
         for(Direction direction : Direction.values()) {
@@ -40,9 +43,7 @@ public class ParticleUtil {
                 double d2 = direction$axis == Direction.Axis.Y ? 0.5D + 0.5625D * (double)direction.getStepY() : (double)random.nextFloat();
                 double d3 = direction$axis == Direction.Axis.Z ? 0.5D + 0.5625D * (double)direction.getStepZ() : (double)random.nextFloat();
                 worldIn.addParticle(particle, (double)pos.getX() + d1, (double)pos.getY() + d2, (double)pos.getZ() + d3, 0.0D, 0.0D, 0.0D);
-                System.out.println("Tried to spawn particle");
             }
         }
-
     }
 }

@@ -8,9 +8,9 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import org.jetbrains.annotations.Nullable;
 
 @OnlyIn(Dist.CLIENT)
-public class WaxOnParticle extends SpriteTexturedParticle {
+public class WaxOffParticle extends SpriteTexturedParticle {
 
-    protected WaxOnParticle(ClientWorld worldIn, double xPos, double yPos, double zPos, double xSpeed, double ySpeed, double zSpeed) {
+    protected WaxOffParticle(ClientWorld worldIn, double xPos, double yPos, double zPos, double xSpeed, double ySpeed, double zSpeed) {
         super(worldIn, xPos, yPos, zPos, xSpeed, ySpeed, zSpeed);
 
         float f = this.random.nextFloat() * 1.0f;
@@ -20,11 +20,11 @@ public class WaxOnParticle extends SpriteTexturedParticle {
 
         this.setSize(0.02f, 0.02f);
         this.quadSize *= this.random.nextFloat() * 1.1f;
-        this.xd *= (double)0.02f;
-        this.yd *= (double)0.02f;
-        this.zd *= (double)0.02f;
+        this.xd *= (double) 0.02f;
+        this.yd *= (double) 0.02f;
+        this.zd *= (double) 0.02f;
         this.lifetime = (worldIn.random.nextInt(30) + 10);
-        //this.lifetime = (int)(20.0D / (Math.random() * 1.0D));
+        //this.lifetime = (int) (20.0D / (Math.random() * 1.0D));
     }
 
     @Override
@@ -52,17 +52,18 @@ public class WaxOnParticle extends SpriteTexturedParticle {
     public static class Factory implements IParticleFactory<BasicParticleType> {
 
         private final IAnimatedSprite spriteSet;
+
         public Factory(IAnimatedSprite sprite) {
-        this.spriteSet = sprite;
-    }
+            this.spriteSet = sprite;
+        }
 
         @Nullable
         @Override
         public Particle createParticle(BasicParticleType typeIn, ClientWorld worldIn, double xPos, double yPos, double zPos, double xSpeed, double ySpeed, double zSpeed) {
-            WaxOnParticle waxOnParticle = new WaxOnParticle(worldIn, xPos, yPos, zPos, xSpeed, ySpeed, zSpeed);
-            waxOnParticle.setColor(1.0f, 1.0f, 1.0f);
-            waxOnParticle.pickSprite(this.spriteSet);
-            return waxOnParticle;
+            WaxOffParticle waxOffParticle = new WaxOffParticle(worldIn, xPos, yPos, zPos, xSpeed, ySpeed, zSpeed);
+            waxOffParticle.setColor(1.0f, 1.0f, 1.0f);
+            waxOffParticle.pickSprite(this.spriteSet);
+            return waxOffParticle;
         }
     }
 }

@@ -8,9 +8,10 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import org.jetbrains.annotations.Nullable;
 
 @OnlyIn(Dist.CLIENT)
-public class WaxOnParticle extends SpriteTexturedParticle {
+@OnlyIn(Dist.CLIENT)
+public class ScrapeParticle extends SpriteTexturedParticle {
 
-    protected WaxOnParticle(ClientWorld worldIn, double xPos, double yPos, double zPos, double xSpeed, double ySpeed, double zSpeed) {
+    protected ScrapeParticle(ClientWorld worldIn, double xPos, double yPos, double zPos, double xSpeed, double ySpeed, double zSpeed) {
         super(worldIn, xPos, yPos, zPos, xSpeed, ySpeed, zSpeed);
 
         float f = this.random.nextFloat() * 1.0f;
@@ -53,16 +54,16 @@ public class WaxOnParticle extends SpriteTexturedParticle {
 
         private final IAnimatedSprite spriteSet;
         public Factory(IAnimatedSprite sprite) {
-        this.spriteSet = sprite;
-    }
+            this.spriteSet = sprite;
+        }
 
         @Nullable
         @Override
         public Particle createParticle(BasicParticleType typeIn, ClientWorld worldIn, double xPos, double yPos, double zPos, double xSpeed, double ySpeed, double zSpeed) {
-            WaxOnParticle waxOnParticle = new WaxOnParticle(worldIn, xPos, yPos, zPos, xSpeed, ySpeed, zSpeed);
-            waxOnParticle.setColor(1.0f, 1.0f, 1.0f);
-            waxOnParticle.pickSprite(this.spriteSet);
-            return waxOnParticle;
+            ScrapeParticle scrapeParticle = new ScrapeParticle(worldIn, xPos, yPos, zPos, xSpeed, ySpeed, zSpeed);
+            scrapeParticle.setColor(1.0f, 1.0f, 1.0f);
+            scrapeParticle.pickSprite(this.spriteSet);
+            return scrapeParticle;
         }
     }
 }
