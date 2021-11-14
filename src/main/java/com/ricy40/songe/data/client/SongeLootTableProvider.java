@@ -1,4 +1,4 @@
-mepackage com.ricy40.songe.data.client;
+package com.ricy40.songe.data.client;
 
 import com.google.common.collect.ImmutableList;
 import com.mojang.datafixers.util.Pair;
