@@ -26,6 +26,10 @@ public class SongeRecipeProvider extends RecipeProvider {
         ShapedRecipeBuilder.shaped(BlockInit.EXPOSED_COPPER_SLAB.get()).define('#', BlockInit.EXPOSED_COPPER.get()).pattern("###").unlockedBy("has", has(BlockInit.EXPOSED_COPPER.get())).save(consumer);
         ShapedRecipeBuilder.shaped(BlockInit.WEATHERED_COPPER_SLAB.get()).define('#', BlockInit.WEATHERED_COPPER.get()).pattern("###").unlockedBy("has", has(BlockInit.WEATHERED_COPPER.get())).save(consumer);
         ShapedRecipeBuilder.shaped(BlockInit.OXIDIZED_COPPER_SLAB.get()).define('#', BlockInit.OXIDIZED_COPPER.get()).pattern("###").unlockedBy("has", has(BlockInit.OXIDIZED_COPPER.get())).save(consumer);
+        ShapedRecipeBuilder.shaped(BlockInit.COPPER_SLAB.get()).define('#', BlockInit.COPPER_BLOCK.get()).pattern("###").unlockedBy("has", has(BlockInit.COPPER_BLOCK.get())).save(consumer);
+        ShapedRecipeBuilder.shaped(BlockInit.EXPOSED_COPPER_SLAB.get()).define('#', BlockInit.EXPOSED_COPPER.get()).pattern("###").unlockedBy("has", has(BlockInit.EXPOSED_COPPER.get())).save(consumer);
+        ShapedRecipeBuilder.shaped(BlockInit.WEATHERED_COPPER_SLAB.get()).define('#', BlockInit.WEATHERED_COPPER.get()).pattern("###").unlockedBy("has", has(BlockInit.WEATHERED_COPPER.get())).save(consumer);
+        ShapedRecipeBuilder.shaped(BlockInit.OXIDIZED_COPPER_SLAB.get()).define('#', BlockInit.OXIDIZED_COPPER.get()).pattern("###").unlockedBy("has", has(BlockInit.OXIDIZED_COPPER.get())).save(consumer);
 
         
         //ShapedRecipeBuilder.shaped(BlockInit.COPPER_STAIRS.get())
