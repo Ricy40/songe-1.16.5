@@ -1,8 +1,10 @@
 package com.ricy40.songe.common.blocks;
 
+import com.ricy40.songe.core.init.ParticleInit;
 import com.ricy40.songe.core.init.SoundInit;
 import com.ricy40.songe.core.interfaces.WaxingBlockList;
 import com.ricy40.songe.core.interfaces.WeatheringCopper;
+import com.ricy40.songe.core.util.ParticleUtil;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.StairsBlock;
@@ -52,6 +54,7 @@ public class WeatheringCopperStairsBlock extends StairsBlock implements Weatheri
                     worldIn.setBlock(pos, newState, 11);
                     playerIn.swing(handIn);
                 }
+                ParticleUtil.spawnParticlesOnFaces(worldIn, pos, ParticleInit.WAX_ON_PARTICLE.get());
                 worldIn.playSound(playerIn, pos.getX(), pos.getY(), pos.getZ(), SoundInit.HONEYCOMB_WAX_ON.get(), SoundCategory.BLOCKS, 10.0f, 1.0f);
                 if (!playerIn.isCreative()) {
                     itemStack.shrink(1);
@@ -74,6 +77,7 @@ public class WeatheringCopperStairsBlock extends StairsBlock implements Weatheri
                     worldIn.setBlock(pos, oldState, 11);
                     playerIn.swing(handIn);
                 }
+                ParticleUtil.spawnParticlesOnFaces(worldIn, pos, ParticleInit.SCRAPE_PARTICLE.get());
                 worldIn.playSound(playerIn, pos.getX(), pos.getY(), pos.getZ(), SoundInit.AXE_SCRAPE.get(), SoundCategory.BLOCKS, 10.0f, 1.0f);
                 if (!playerIn.isCreative()) {
                     item.damageItem(itemStack, 1, playerIn, player -> player.broadcastBreakEvent(handIn));
