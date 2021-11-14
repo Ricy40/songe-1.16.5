@@ -1,7 +1,9 @@
 package com.ricy40.songe.common.blocks;
 
+import com.ricy40.songe.core.init.ParticleInit;
 import com.ricy40.songe.core.init.SoundInit;
 import com.ricy40.songe.core.interfaces.WaxingBlockList;
+import com.ricy40.songe.core.util.ParticleUtil;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.SlabBlock;
 import net.minecraft.entity.player.PlayerEntity;
@@ -40,6 +42,7 @@ public class WaxingCopperSlabBlock extends SlabBlock implements WaxingBlockList 
                     worldIn.setBlock(pos, axeState, 11);
                     playerIn.swing(handIn);
                 }
+                ParticleUtil.spawnParticlesOnFaces(worldIn, pos, ParticleInit.WAX_OFF_PARTICLE.get());
                 worldIn.playSound(playerIn, pos.getX(), pos.getY(), pos.getZ(), SoundInit.AXE_WAX_OFF.get(), SoundCategory.BLOCKS, 10.0f, 1.0f);
                 if (!playerIn.isCreative()) {
                     item.damageItem(itemStack, 1, playerIn, player -> player.broadcastBreakEvent(handIn));

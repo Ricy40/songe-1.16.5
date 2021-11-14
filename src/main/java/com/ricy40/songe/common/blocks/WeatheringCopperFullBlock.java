@@ -79,6 +79,7 @@ public class WeatheringCopperFullBlock extends Block implements WeatheringCopper
                     worldIn.setBlock(pos, oldState, 11);
                     playerIn.swing(handIn);
                 }
+                ParticleUtil.spawnParticlesOnFaces(worldIn, pos, ParticleInit.SCRAPE_PARTICLE.get());
                 worldIn.playSound(playerIn, pos.getX(), pos.getY(), pos.getZ(), SoundInit.AXE_SCRAPE.get(), SoundCategory.BLOCKS, 10.0f, 1.0f);
                 if (!playerIn.isCreative()) {
                     item.damageItem(itemStack, 1, playerIn, player -> player.broadcastBreakEvent(handIn));
