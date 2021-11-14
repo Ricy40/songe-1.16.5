@@ -3,9 +3,7 @@ package com.ricy40.songe.data.client;
 import com.ricy40.songe.Songe;
 import com.ricy40.songe.core.init.BlockInit;
 import com.ricy40.songe.core.init.ItemInit;
-import net.minecraft.block.Blocks;
 import net.minecraft.data.*;
-import net.minecraft.item.Items;
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.util.ResourceLocation;
 
