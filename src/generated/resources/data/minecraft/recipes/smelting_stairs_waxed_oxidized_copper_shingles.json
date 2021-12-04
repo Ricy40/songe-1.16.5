@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "songe:waxed_oxidized_copper_shingles_stairs"
+  },
+  "result": "songe:oxidized_copper_shingles_stairs",
+  "experience": 0.35,
+  "cookingtime": 200
+}

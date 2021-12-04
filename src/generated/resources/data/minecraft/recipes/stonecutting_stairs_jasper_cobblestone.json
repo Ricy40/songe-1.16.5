@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "songe:jasper_cobblestone"
+  },
+  "result": "songe:jasper_cobblestone_stairs",
+  "count": 1
+}

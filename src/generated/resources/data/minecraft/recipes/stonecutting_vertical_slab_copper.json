@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "songe:copper_block"
+  },
+  "result": "songe:copper_vertical_slab",
+  "count": 2
+}

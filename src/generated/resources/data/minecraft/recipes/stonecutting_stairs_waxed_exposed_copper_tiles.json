@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "songe:waxed_exposed_copper_tiles"
+  },
+  "result": "songe:waxed_exposed_copper_tiles_stairs",
+  "count": 1
+}

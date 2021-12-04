@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "songe:jasper_cobblestone"
+    }
+  },
+  "result": {
+    "item": "songe:jasper_cobblestone_wall",
+    "count": 6
+  }
+}

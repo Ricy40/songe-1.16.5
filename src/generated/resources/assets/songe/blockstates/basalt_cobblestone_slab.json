@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=top": {
+      "model": "songe:block/basalt_cobblestone_slab_top"
+    },
+    "type=bottom": {
+      "model": "songe:block/basalt_cobblestone_slab"
+    },
+    "type=double": {
+      "model": "songe:block/basalt_cobblestone"
+    }
+  }
+}

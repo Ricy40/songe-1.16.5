@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "songe:basalt_cobblestone"
+    }
+  },
+  "result": {
+    "item": "songe:basalt_cobblestone_wall",
+    "count": 6
+  }
+}

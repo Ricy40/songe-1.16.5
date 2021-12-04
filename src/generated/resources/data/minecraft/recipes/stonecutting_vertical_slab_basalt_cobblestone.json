@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "songe:basalt_cobblestone"
+  },
+  "result": "songe:basalt_cobblestone_vertical_slab",
+  "count": 2
+}

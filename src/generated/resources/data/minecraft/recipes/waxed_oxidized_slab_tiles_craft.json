@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "songe:waxed_oxidized_copper_tiles"
+    }
+  },
+  "result": {
+    "item": "songe:waxed_oxidized_copper_tiles_slab",
+    "count": 4
+  }
+}

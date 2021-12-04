@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "#",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "songe:oxidized_copper"
+    }
+  },
+  "result": {
+    "item": "songe:oxidized_copper_vertical_slab",
+    "count": 4
+  }
+}

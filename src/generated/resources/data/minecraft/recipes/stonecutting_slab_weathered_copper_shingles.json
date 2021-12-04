@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "songe:weathered_copper_shingles"
+  },
+  "result": "songe:weathered_copper_shingles_slab",
+  "count": 2
+}

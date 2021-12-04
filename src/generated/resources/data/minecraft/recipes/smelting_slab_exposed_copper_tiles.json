@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "songe:exposed_copper_tiles_slab"
+  },
+  "result": "songe:copper_tiles_slab",
+  "experience": 0.35,
+  "cookingtime": 200
+}

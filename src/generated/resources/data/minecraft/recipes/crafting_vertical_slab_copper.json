@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "#",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "songe:copper_block"
+    }
+  },
+  "result": {
+    "item": "songe:copper_vertical_slab",
+    "count": 4
+  }
+}

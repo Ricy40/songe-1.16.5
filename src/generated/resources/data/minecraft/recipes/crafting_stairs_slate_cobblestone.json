@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "songe:slate_cobblestone"
+    }
+  },
+  "result": {
+    "item": "songe:slate_cobblestone_stairs",
+    "count": 4
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "songe:oxidized_copper_vertical_slab"
+  },
+  "result": "songe:weathered_copper_vertical_slab",
+  "experience": 0.35,
+  "cookingtime": 200
+}

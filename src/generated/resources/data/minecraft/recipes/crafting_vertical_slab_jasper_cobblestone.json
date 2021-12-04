@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "#",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "songe:jasper_cobblestone"
+    }
+  },
+  "result": {
+    "item": "songe:jasper_cobblestone_vertical_slab",
+    "count": 4
+  }
+}

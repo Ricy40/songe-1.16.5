@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "songe:copper_shingles"
+    }
+  },
+  "result": {
+    "item": "songe:copper_shingles_slab",
+    "count": 4
+  }
+}

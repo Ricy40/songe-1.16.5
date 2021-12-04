@@ -5,6 +5,7 @@ import com.ricy40.songe.data.client.SongeBlockStateProvider;
 import com.ricy40.songe.data.client.SongeLootTableProvider;
 import com.ricy40.songe.data.client.SongeModelProvider;
 import com.ricy40.songe.data.client.SongeRecipeProvider;
+import net.minecraft.data.BlockTagsProvider;
 import net.minecraft.data.DataGenerator;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -23,8 +24,13 @@ public final class DataGenerators {
         gen.addProvider(new SongeBlockStateProvider(gen, existingFileHelper));
         gen.addProvider(new SongeModelProvider(gen, existingFileHelper));
 
+        SongeBlockTagsProvider blockTags = new SongeBlockTagsProvider(gen, existingFileHelper);
+        gen.addProvider(blockTags);
+        gen.addProvider(new SongeItemTagsProvider(gen, blockTags, existingFileHelper));
+
         gen.addProvider(new SongeLootTableProvider(gen));
         gen.addProvider(new SongeRecipeProvider(gen));
+
 
     }
 }

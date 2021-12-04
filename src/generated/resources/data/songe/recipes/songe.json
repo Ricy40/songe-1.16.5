@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "songe:songe_block"
+    }
+  ],
+  "result": {
+    "item": "songe:songe",
+    "count": 9
+  }
+}

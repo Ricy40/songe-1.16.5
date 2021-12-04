@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "songe:waxed_weathered_copper_slab"
+  },
+  "result": "songe:weathered_copper_slab",
+  "experience": 0.35,
+  "cookingtime": 200
+}

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "songe:exposed_copper"
+    }
+  },
+  "result": {
+    "item": "songe:exposed_copper_slab",
+    "count": 4
+  }
+}

@@ -14,6 +14,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 public class ItemInit {
 
 	public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, Songe.MOD_ID);
+
 	public static final RegistryObject<Item> SONGE = ITEMS.register("songe", () -> new Item(new Item.Properties().tab(Songe.SONGE_GROUP).rarity(Rarity.COMMON)));
 	public static final RegistryObject<Item> SPECIAL_SONGE = ITEMS.register("special_songe", () -> new SongeItem (new Item.Properties().tab(Songe.SONGE_GROUP).fireResistant().rarity(Rarity.UNCOMMON)));
 

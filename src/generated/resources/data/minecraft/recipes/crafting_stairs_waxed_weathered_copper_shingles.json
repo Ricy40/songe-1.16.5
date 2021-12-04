@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "songe:waxed_weathered_copper_shingles"
+    }
+  },
+  "result": {
+    "item": "songe:waxed_weathered_copper_shingles_stairs",
+    "count": 4
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "songe:waxed_oxidized_copper_tiles"
+  },
+  "result": "songe:waxed_oxidized_copper_tiles_vertical_slab",
+  "count": 2
+}

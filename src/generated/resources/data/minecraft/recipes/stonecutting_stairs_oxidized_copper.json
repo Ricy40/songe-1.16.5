@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "songe:oxidized_copper"
+  },
+  "result": "songe:oxidized_copper_stairs",
+  "count": 1
+}

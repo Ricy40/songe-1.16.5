@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "songe:waxed_copper_block"
+  },
+  "result": "songe:waxed_copper_slab",
+  "count": 2
+}

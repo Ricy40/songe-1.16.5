@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "songe:weathered_copper_stairs"
+  },
+  "result": "songe:exposed_copper_stairs",
+  "experience": 0.35,
+  "cookingtime": 200
+}

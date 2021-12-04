@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "songe:waxed_copper_tiles_vertical_slab"
+  },
+  "result": "songe:copper_tiles_vertical_slab",
+  "experience": 0.35,
+  "cookingtime": 200
+}

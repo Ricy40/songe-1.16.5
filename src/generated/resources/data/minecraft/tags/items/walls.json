@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "songe:marble_cobblestone_wall",
+    "songe:slate_cobblestone_wall",
+    "songe:jasper_cobblestone_wall",
+    "songe:basalt_cobblestone_wall"
+  ]
+}

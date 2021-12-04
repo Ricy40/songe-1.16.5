@@ -67,7 +67,7 @@ public class SongeLootTableProvider extends LootTableProvider
             dropSelf(BlockInit.WEATHERED_COPPER_STAIRS.get());
             add(BlockInit.WEATHERED_COPPER_VERTICAL_SLAB.get(), createSlabItemTable(BlockInit.WEATHERED_COPPER_VERTICAL_SLAB.get()));
             dropSelf(BlockInit.OXIDIZED_COPPER.get());
-            add(BlockInit.WAXED_COPPER_SLAB.get(), createSlabItemTable(BlockInit.WAXED_COPPER_SLAB.get()));
+            add(BlockInit.OXIDIZED_COPPER_SLAB.get(), createSlabItemTable(BlockInit.OXIDIZED_COPPER_SLAB.get()));
             dropSelf(BlockInit.OXIDIZED_COPPER_STAIRS.get());
             add(BlockInit.OXIDIZED_COPPER_VERTICAL_SLAB.get(), createSlabItemTable(BlockInit.OXIDIZED_COPPER_VERTICAL_SLAB.get()));
 
@@ -168,21 +168,14 @@ public class SongeLootTableProvider extends LootTableProvider
             add(BlockInit.ANDESITE_COBBLESTONE_VERTICAL_SLAB.get(), createSlabItemTable(BlockInit.ANDESITE_COBBLESTONE_VERTICAL_SLAB.get()));
             add(BlockInit.DIORITE_COBBLESTONE_VERTICAL_SLAB.get(), createSlabItemTable(BlockInit.DIORITE_COBBLESTONE_VERTICAL_SLAB.get()));
             add(BlockInit.ANCHOR_TREE_VERTICAL_SLAB.get(), createSlabItemTable(BlockInit.ANCHOR_TREE_VERTICAL_SLAB.get()));
-            add(BlockInit.ASPEN_VERTICAL_SLAB.get(), createSlabItemTable(BlockInit.ASPEN_VERTICAL_SLAB.get()));
-            add(BlockInit.BAOBAB_VERTICAL_SLAB.get(), createSlabItemTable(BlockInit.BAOBAB_VERTICAL_SLAB.get()));
             add(BlockInit.BASALT_VERTICAL_SLAB.get(), createSlabItemTable(BlockInit.BASALT_VERTICAL_SLAB.get()));
             add(BlockInit.BLUE_OBSIDIAN_BRICKS_VERTICAL_SLAB.get(), createSlabItemTable(BlockInit.BLUE_OBSIDIAN_BRICKS_VERTICAL_SLAB.get()));
             add(BlockInit.BLUE_OBSIDIAN_TILE_VERTICAL_SLAB.get(), createSlabItemTable(BlockInit.BLUE_OBSIDIAN_TILE_VERTICAL_SLAB.get()));
             add(BlockInit.BONE_VERTICAL_SLAB.get(), createSlabItemTable(BlockInit.BONE_VERTICAL_SLAB.get()));
-            add(BlockInit.CHISELED_RED_ROCK_BRICK_VERTICAL_SLAB.get(), createSlabItemTable(BlockInit.CHISELED_RED_ROCK_BRICK_VERTICAL_SLAB.get()));
-            add(BlockInit.CIKA_VERTICAL_SLAB.get(), createSlabItemTable(BlockInit.CIKA_VERTICAL_SLAB.get()));
             add(BlockInit.CINCINNASITE_VERTICAL_SLAB.get(), createSlabItemTable(BlockInit.CINCINNASITE_VERTICAL_SLAB.get()));
-            add(BlockInit.CRACKED_RED_ROCK_BRICK_VERTICAL_SLAB.get(), createSlabItemTable(BlockInit.CRACKED_RED_ROCK_BRICK_VERTICAL_SLAB.get()));
-            add(BlockInit.CYPRESS_VERTICAL_SLAB.get(), createSlabItemTable(BlockInit.CYPRESS_VERTICAL_SLAB.get()));
             add(BlockInit.DARK_SCORIA_BRICKS_VERTICAL_SLAB.get(), createSlabItemTable(BlockInit.DARK_SCORIA_BRICKS_VERTICAL_SLAB.get()));
             add(BlockInit.DARK_SCORIA_COBBLESTONE_VERTICAL_SLAB.get(), createSlabItemTable(BlockInit.DARK_SCORIA_COBBLESTONE_VERTICAL_SLAB.get()));
             add(BlockInit.DRAGON_TREE_VERTICAL_SLAB.get(), createSlabItemTable(BlockInit.DRAGON_TREE_VERTICAL_SLAB.get()));
-            add(BlockInit.EBONY_VERTICAL_SLAB.get(), createSlabItemTable(BlockInit.EBONY_VERTICAL_SLAB.get()));
             add(BlockInit.END_LOTUS_VERTICAL_SLAB.get(), createSlabItemTable(BlockInit.END_LOTUS_VERTICAL_SLAB.get()));
             add(BlockInit.FANCY_DARK_SCORIA_BRICKS_VERTICAL_SLAB.get(), createSlabItemTable(BlockInit.FANCY_DARK_SCORIA_BRICKS_VERTICAL_SLAB.get()));
             add(BlockInit.FANCY_DIORITE_BRICKS_VERTICAL_SLAB.get(), createSlabItemTable(BlockInit.FANCY_DIORITE_BRICKS_VERTICAL_SLAB.get()));
@@ -196,14 +189,10 @@ public class SongeLootTableProvider extends LootTableProvider
             add(BlockInit.GABBRO_COBBLESTONE_VERTICAL_SLAB.get(), createSlabItemTable(BlockInit.GABBRO_COBBLESTONE_VERTICAL_SLAB.get()));
             add(BlockInit.GRANITE_COBBLESTONE_VERTICAL_SLAB.get(), createSlabItemTable(BlockInit.GRANITE_COBBLESTONE_VERTICAL_SLAB.get()));
             add(BlockInit.HELIX_TREE_VERTICAL_SLAB.get(), createSlabItemTable(BlockInit.HELIX_TREE_VERTICAL_SLAB.get()));
-            add(BlockInit.HOLLY_VERTICAL_SLAB.get(), createSlabItemTable(BlockInit.HOLLY_VERTICAL_SLAB.get()));
             add(BlockInit.JELLYSHROOM_VERTICAL_SLAB.get(), createSlabItemTable(BlockInit.JELLYSHROOM_VERTICAL_SLAB.get()));
             add(BlockInit.LACUGROVE_VERTICAL_SLAB.get(), createSlabItemTable(BlockInit.LACUGROVE_VERTICAL_SLAB.get()));
             add(BlockInit.LIMESTONE_COBBLESTONE_VERTICAL_SLAB.get(), createSlabItemTable(BlockInit.LIMESTONE_COBBLESTONE_VERTICAL_SLAB.get()));
-            add(BlockInit.MANGROVE_VERTICAL_SLAB.get(), createSlabItemTable(BlockInit.MANGROVE_VERTICAL_SLAB.get()));
-            add(BlockInit.MAPLE_VERTICAL_SLAB.get(), createSlabItemTable(BlockInit.MAPLE_VERTICAL_SLAB.get()));
             add(BlockInit.MOSSY_GLOWSHROOM_VERTICAL_SLAB.get(), createSlabItemTable(BlockInit.MOSSY_GLOWSHROOM_VERTICAL_SLAB.get()));
-            add(BlockInit.MOSSY_STONE_VERTICAL_SLAB.get(), createSlabItemTable(BlockInit.MOSSY_STONE_VERTICAL_SLAB.get()));
             add(BlockInit.MUSHROOM_FIR_VERTICAL_SLAB.get(), createSlabItemTable(BlockInit.MUSHROOM_FIR_VERTICAL_SLAB.get()));
             add(BlockInit.MUSHROOM_VERTICAL_SLAB.get(), createSlabItemTable(BlockInit.MUSHROOM_VERTICAL_SLAB.get()));
             add(BlockInit.NETHER_BRICK_TILE_VERTICAL_SLAB.get(), createSlabItemTable(BlockInit.NETHER_BRICK_TILE_VERTICAL_SLAB.get()));
@@ -216,14 +205,10 @@ public class SongeLootTableProvider extends LootTableProvider
             add(BlockInit.PAVED_GRANITE_VERTICAL_SLAB.get(), createSlabItemTable(BlockInit.PAVED_GRANITE_VERTICAL_SLAB.get()));
             add(BlockInit.PAVED_LIMESTONE_VERTICAL_SLAB.get(), createSlabItemTable(BlockInit.PAVED_LIMESTONE_VERTICAL_SLAB.get()));
             add(BlockInit.PAVED_SCORIA_VERTICAL_SLAB.get(), createSlabItemTable(BlockInit.PAVED_SCORIA_VERTICAL_SLAB.get()));
-            add(BlockInit.PINE_VERTICAL_SLAB.get(), createSlabItemTable(BlockInit.PINE_VERTICAL_SLAB.get()));
             add(BlockInit.POLISHED_DARK_SCORIA_VERTICAL_SLAB.get(), createSlabItemTable(BlockInit.POLISHED_DARK_SCORIA_VERTICAL_SLAB.get()));
             add(BlockInit.POLISHED_GABBRO_VERTICAL_SLAB.get(), createSlabItemTable(BlockInit.POLISHED_GABBRO_VERTICAL_SLAB.get()));
             add(BlockInit.POLISHED_SCORIA_VERTICAL_SLAB.get(), createSlabItemTable(BlockInit.POLISHED_SCORIA_VERTICAL_SLAB.get()));
             add(BlockInit.PYTHADENDRON_VERTICAL_SLAB.get(), createSlabItemTable(BlockInit.PYTHADENDRON_VERTICAL_SLAB.get()));
-            add(BlockInit.RAINBOW_EUCALYPTUS_VERTICAL_SLAB.get(), createSlabItemTable(BlockInit.RAINBOW_EUCALYPTUS_VERTICAL_SLAB.get()));
-            add(BlockInit.RED_ROCK_VERTICAL_SLAB.get(), createSlabItemTable(BlockInit.RED_ROCK_VERTICAL_SLAB.get()));
-            add(BlockInit.REED_THATCH_VERTICAL_SLAB.get(), createSlabItemTable(BlockInit.REED_THATCH_VERTICAL_SLAB.get()));
             add(BlockInit.REEDS_VERTICAL_SLAB.get(), createSlabItemTable(BlockInit.REEDS_VERTICAL_SLAB.get()));
             add(BlockInit.ROOF_TILE_CINCINNASITE_VERTICAL_SLAB.get(), createSlabItemTable(BlockInit.ROOF_TILE_CINCINNASITE_VERTICAL_SLAB.get()));
             add(BlockInit.ROOF_TILE_NETHER_BRICKS_VERTICAL_SLAB.get(), createSlabItemTable(BlockInit.ROOF_TILE_NETHER_BRICKS_VERTICAL_SLAB.get()));
@@ -234,7 +219,6 @@ public class SongeLootTableProvider extends LootTableProvider
             add(BlockInit.RUBEUS_VERTICAL_SLAB.get(), createSlabItemTable(BlockInit.RUBEUS_VERTICAL_SLAB.get()));
             add(BlockInit.SCORIA_BRICKS_VERTICAL_SLAB.get(), createSlabItemTable(BlockInit.SCORIA_BRICKS_VERTICAL_SLAB.get()));
             add(BlockInit.SCORIA_COBBLESTONE_VERTICAL_SLAB.get(), createSlabItemTable(BlockInit.SCORIA_COBBLESTONE_VERTICAL_SLAB.get()));
-            add(BlockInit.SKYRIS_VERTICAL_SLAB.get(), createSlabItemTable(BlockInit.SKYRIS_VERTICAL_SLAB.get()));
             add(BlockInit.STALAGNATE_PLANKS_VERTICAL_SLAB.get(), createSlabItemTable(BlockInit.STALAGNATE_PLANKS_VERTICAL_SLAB.get()));
             add(BlockInit.SULFURIC_ROCK_BRICKS_VERTICAL_SLAB.get(), createSlabItemTable(BlockInit.SULFURIC_ROCK_BRICKS_VERTICAL_SLAB.get()));
             add(BlockInit.SULFURIC_ROCK_VERTICAL_SLAB.get(), createSlabItemTable(BlockInit.SULFURIC_ROCK_VERTICAL_SLAB.get()));
@@ -246,8 +230,33 @@ public class SongeLootTableProvider extends LootTableProvider
             add(BlockInit.VIOLECITE_VERTICAL_SLAB.get(), createSlabItemTable(BlockInit.VIOLECITE_VERTICAL_SLAB.get()));
             add(BlockInit.WART_VERTICAL_SLAB.get(), createSlabItemTable(BlockInit.WART_VERTICAL_SLAB.get()));
             add(BlockInit.WILLOW_VERTICAL_SLAB.get(), createSlabItemTable(BlockInit.WILLOW_VERTICAL_SLAB.get()));
-            add(BlockInit.ZELKOVA_VERTICAL_SLAB.get(), createSlabItemTable(BlockInit.ZELKOVA_VERTICAL_SLAB.get()));
 
+            // Cobbled Blocks
+            
+            dropSelf(BlockInit.MARBLE_COBBLESTONE.get());
+            dropSelf(BlockInit.JASPER_COBBLESTONE.get());
+            dropSelf(BlockInit.SLATE_COBBLESTONE.get());
+            dropSelf(BlockInit.BASALT_COBBLESTONE.get());
+
+            dropSelf(BlockInit.MARBLE_COBBLESTONE_SLAB.get());
+            dropSelf(BlockInit.JASPER_COBBLESTONE_SLAB.get());
+            dropSelf(BlockInit.SLATE_COBBLESTONE_SLAB.get());
+            dropSelf(BlockInit.BASALT_COBBLESTONE_SLAB.get());
+
+            dropSelf(BlockInit.MARBLE_COBBLESTONE_STAIRS.get());
+            dropSelf(BlockInit.JASPER_COBBLESTONE_STAIRS.get());
+            dropSelf(BlockInit.SLATE_COBBLESTONE_STAIRS.get());
+            dropSelf(BlockInit.BASALT_COBBLESTONE_STAIRS.get());
+            
+            dropSelf(BlockInit.MARBLE_COBBLESTONE_VERTICAL_SLAB.get());
+            dropSelf(BlockInit.JASPER_COBBLESTONE_VERTICAL_SLAB.get());
+            dropSelf(BlockInit.SLATE_COBBLESTONE_VERTICAL_SLAB.get());
+            dropSelf(BlockInit.BASALT_COBBLESTONE_VERTICAL_SLAB.get());
+
+            dropSelf(BlockInit.MARBLE_COBBLESTONE_WALL.get());
+            dropSelf(BlockInit.JASPER_COBBLESTONE_WALL.get());
+            dropSelf(BlockInit.SLATE_COBBLESTONE_WALL.get());
+            dropSelf(BlockInit.BASALT_COBBLESTONE_WALL.get());
 
         }
 

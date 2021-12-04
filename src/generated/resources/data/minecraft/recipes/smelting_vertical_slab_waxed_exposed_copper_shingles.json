@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "songe:waxed_exposed_copper_shingles_vertical_slab"
+  },
+  "result": "songe:exposed_copper_shingles_vertical_slab",
+  "experience": 0.35,
+  "cookingtime": 200
+}

@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "songe:slate_cobblestone"
+  },
+  "result": "songe:slate_cobblestone_stairs",
+  "count": 1
+}
