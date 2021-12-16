@@ -2,6 +2,7 @@ package com.ricy40.songe.core.enums;
 
 import com.ricy40.songe.core.init.ItemInit;
 import net.minecraft.item.IItemTier;
+import net.minecraft.item.Items;
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.util.LazyValue;
 
@@ -11,7 +12,6 @@ public enum ModItemTier implements IItemTier {
 
     SONGE(1, 220, 5.0f, 2.5f, 18,
             () -> Ingredient.of(ItemInit.SONGE.get()))
-
     ;
 
     private final int level;

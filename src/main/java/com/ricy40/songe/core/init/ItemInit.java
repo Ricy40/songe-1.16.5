@@ -39,5 +39,13 @@ public class ItemInit {
 	public static final  RegistryObject<Item> RAW_THALLASIUM = ITEMS.register("raw_thallasium", () -> new Item(new Item.Properties().tab(Songe.SONGE_GROUP)));
 	public static final  RegistryObject<Item> RAW_ZINC = ITEMS.register("raw_zinc", () -> new Item(new Item.Properties().tab(Songe.SONGE_GROUP)));
 
+	//Brass Tools
+	
+	public static final RegistryObject<Item> BRASS_PICKAXE = ITEMS.register("brass_pickaxe", () -> new PickaxeItem(ItemTier.IRON, 1, -2.8F, new Item.Properties().tab(Songe.SONGE_GROUP)));
+	public static final RegistryObject<Item> BRASS_SHOVEL = ITEMS.register("brass_shovel", () -> new ShovelItem(ItemTier.IRON, 1.5F, -3.0F, new Item.Properties().tab(Songe.SONGE_GROUP)));
+	public static final RegistryObject<Item> BRASS_HOE = ITEMS.register("brass_hoe", () -> new HoeItem(ItemTier.IRON, 0, -3.0F, new Item.Properties().tab(Songe.SONGE_GROUP)));
+	public static final RegistryObject<Item> BRASS_AXE = ITEMS.register("brass_axe", () -> new AxeItem(ItemTier.IRON, 6.0F, -3.0F, new Item.Properties().tab(Songe.SONGE_GROUP)));
+
+
 }
 	
